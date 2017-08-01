@@ -18,6 +18,7 @@ in practice you realize that you don’t really want to hurt the kid. He shows a
  now that you already promised your friends you’d mess him up. So, what are you going to do: Use your fists or single him out?
 '''
 
+
 print(start)
 
 done = False
@@ -28,20 +29,50 @@ while not done:
         done = True
 
 done = False
-while not done:
-    user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ")
-    if user_input == "Yes":
+    while not done:
+        user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ")
+        if user_input == "Yes":
         print(bPractice)
         bViolence()
         done= True
-    elif user_input = "No"
+    elif user_input = "No":
         print()
+
+        done= True
     else:
         print("Please type Yes or No" )
 
 Def  bViolence()
-    user_input = input("What will you do? Type Punch or Humiliate: ")
-    if user_input == "Punch"
-else:
-    print("Please type Punch or Humiliate.")
-    
+    done = False
+    while not done:
+        user_input = input("What will you do? Type Punch or Humiliate: ")
+        if user_input == "Punch":
+            print()
+            b()
+            done = True
+        elif user_input == "Humiliate":
+            print()
+            b()
+            done = True
+        else:
+            print("Please type Punch or Humiliate.")
+
+Def bPunch()
+    done = False
+    while not done:
+        user input
+        if user_input == "j":
+            print()
+        elif user_input == " j":
+            print()
+        else:
+            print("Please type ")
+
+Def bHumiliate()
+    done = False
+    while not done:
+        user_input=
+        if user_input == "l":
+        elif user_input == "e":
+        else:
+            print("Please type )
