@@ -1,3 +1,7 @@
+cStart = """
+    Welcome to Carly's adventure! You're 17 years old and live in Boca Raton, Florida!
+"""
+
 cSocialMedia = """
     You took a few pictures today and you were TOTALLY feeling yourself! You're debating between the selfie, where your highlighter
     and eyebrows look AMAZING! You're literally glowing in the picture-which is why you love it so much! But, you also love the one your
@@ -77,21 +81,42 @@ cReveal = """
     do you ask your mom to help you?
 """
 
-def cIntro():
-    print(cSocialMedia)
-    done = False
-    while not done:
-        user_input = str (input("Type 'makeup' if it's the glowing selfie, or 'body' if it's the picture of your great body: "))
-        if user_input == "makeup":
-            print(cFake)
-            cMakeup()
-            done = True
-        elif user_input == "body":
-            print(cShaming)
-            cBody()
-            done = True
-        else:
-            print("Please type 'makeup' or 'selfie'");
+cDean = """
+    You go to the dean's as soon as possible and show him everything! All the screenshots you've collected and the comments that have been thrown
+    at you. He takes a while, like a month, but finally all the people that harrassed you got suspended for one week. It's nothing TOO major, but it
+    will go on their transcript. They deserve it, and you feel relief that nobody is attacking you anymore. You did the right thing by going to the
+    dean, and you know it!
+"""
+
+cMom = """
+    You confide in your mom, tell her EVERYTHING. She hugs you and comforts you a lot, and you know this was a good choice. She calls up the school
+    and complains, but they do absolutely nothing because 'What the students do out of school, online or offline, is out of our control'. Your mom
+    trys to talk to the parents of the people that harrassed you, but the mothers and fathers just defend their children. There's not much more to be
+    done, which sucks! But, you know you made the right choice telling your mother, because although there is no justice for the cyberbullying you
+    received, you feel a lot better with someone on your side.
+"""
+
+cFire = """
+    You ask your friends to help you gang up against Ali and her friends, and to your surpise, they say no. They tell you they don't like the
+    person you've become, filled with anger and constantly seeking revenge with them! Suddenly you find yourself alone with no friends, because
+    you tried to fight back and fight fire with fire. Being rude to a cyberbully makes YOU a bully, and you had to learn that the hard way.
+"""
+
+cSafe = """
+    You've stayed safe on the internet by ignoring comments and bullies, and keeping your chill. Although, in the future it might be better to ask for help from
+    an authority figure, whether it be your mom or a teacher or a dean! For now though, you're doing great and have good friends supporting you.
+"""
+
+cApology = """
+    You instantly confront Alec, determined to make him apologize and give you an explanation. He says he was pressured by his friends to get with
+    girls, and when he hadn't yet, he had to make something up. Turns out, he's not even into girls, but is too scared of what people will think, so he
+    succumbed to peer pressure to harass others. He's learned his lesson, and apologizes to you. You feel bad for his story, and end up covering for him,
+    saying that you did hang out as long as he tells everyone nothing happened but a simple kiss! You feel happy, and you're glad you did a good thing
+    and protected someone.
+"""
+
+
+
 
 def cMakeup():
     done = False
@@ -136,9 +161,9 @@ def cRequest():
             cChoice()
             done = True
         else:
-            print("Please type 'ignore' or 'fight'");
+            print("Please type 'accept' or 'deny'");
 
-def cSchool():
+def cDirtyLooks():
     done = False
     while not done:
         user_input = str (input("Type 'dean' if you want to tell the dean, or 'friends' if you want to turn your friends against Ali and her squad: "))
@@ -182,19 +207,64 @@ def cAskOut():
             cPosted()
             done = True
         else:
-            print("Please type 'mom' or 'confront'");
+            print("Please type 'yes' or 'no'");
 
 def cHumiliated():
     done = False
     while not done:
-        user_input = str (input("Type 'mom' if you want to ask your mom to help, or 'confront' if you want to handle this on your own with Alec. : "))
+        user_input = str (input("Type 'mom' if you want to ask your mom to help, or 'ignore' if you think you can just move on: "))
         if user_input == "mom":
             print(cMom)
             cEndGame()
             done = True
-        elif user_input == "confront":
-            print(cApology)
+        elif user_input == "ignore":
+            print(cSafe)
             cEndGame()
             done = True
         else:
-            print("Please type 'mom' or 'confront'");
+            print("Please type 'mom' or 'ignore'");
+
+def cPosted():
+    done = False
+    while not done:
+        user_input = str (input("Type 'mom' if you want to ask your mom to help, or 'dean' if you think you can get help from the superintendent: "))
+        if user_input == "mom":
+            print(cMom)
+            cEndGame()
+            done = True
+        elif user_input == "dean":
+            print(cDean)
+            cEndGame()
+            done = True
+        else:
+            print("Please type 'mom' or 'dean'");
+
+def cEndGame():
+    done = False
+    while not done:
+        user_input = str (input("You have completed Carly's cyberbullying text adventure. To chose another story, type 'play again'  "))
+        if user_input == "play again":
+            cIntro()
+            done = True
+        else:
+            print("Please type 'play again'");
+
+def cIntro():
+    print(cSocialMedia)
+    done = False
+    while not done:
+        user_input = str (input("Type 'makeup' if it's the glowing selfie, or 'body' if it's the picture of your great body: "))
+        if user_input == "makeup":
+            print(cFake)
+            cMakeup()
+            done = True
+        elif user_input == "body":
+            print(cShaming)
+            cBody()
+            done = True
+        else:
+            print("Please type 'makeup' or 'selfie'");
+
+
+print (cStart)
+cIntro()
