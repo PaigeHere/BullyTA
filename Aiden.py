@@ -77,4 +77,29 @@ Mrs.Andrews walks in cheerily
 Mrs.Andrews-"Hiiiii boysssss!! How are you today?"
 Neither of you respond
 Mrs.Andrews-"Well in that case I'm doing fine thanks for asking, let's dive into why we are here
-it seems like neither if you can get along "
+it seems like neither if you can get along, would you like to tell me why Nathanial?"
+He says Nothing
+Mrs.Andrews-"ok, what about you Aiden? Will you tell me?"
+You can either tell Mrs.Andrews what Flash has been doing to you this whole time or you can
+keep quiet, which will you choose?
+'''
+Tell Mrs.Andrews='''
+You decide to tell Mrs.Andrews what Flash has been doing to you in great detail,
+when it first started, how it makes you feel, how confusing it is because you didn't
+even know him before, but now he's your worse nightmare, you even describe a nightmare you had
+of him.
+Mrs.Andrews-"Wow, thank you for telling me all of this Aiden, now Nathanial, hearing how your
+actions make Aiden feel, how does it make you feel?"
+Flash turns his head away, wiping at his face, and suddenly grabs his bookbag running out of the room.
+Mrs.Andrews-"N-Nathanial!! Where are you going?!" She says running after him.
+You sit there watching this all happen, you thought he would get a kick out of all you said, but, this happened
+You-"Was he crying?!" You exclaim in shock, "Heck I should be the one cryign after all the stuff he's
+pulled!" you sit back on the couch trying to figure out if what you saw was true, "Couldn't have been, or could it be,
+that I Aiden Pierce made Nathanial Flash Bunswick cry by saying all the things he's done to me?"
+As you sit ther confused Mrs.Andrews walks in with a worried look on her face,
+Mrs.Andrews- "I couldn't find him anywhere, I'm goign to alert the principal, you may go home for the day Aiden."
+She says making her way over to her desk to call the principal
+You-"O-ok, well see you tomorrow Mrs.ANdrews"
+"Bye Aiden"
+You walk out of the school to go home, you notice the sun is setting
+As you are walking out of the school you feel like you are being watched.
