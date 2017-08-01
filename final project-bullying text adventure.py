@@ -19,10 +19,13 @@ and soon more kids get on and the bus is filling up. Suddenly a new boyu comes a
 himself as Jacob. You guy become very close and great friends. He lives a few blocks away and you guys hangout all
 the time. He is pretty nerdy when it comes to science but it comes in handy when you guys are lab partners.
 '''
+L_BULLIES = '''
+Your best friend is going to be bullied. Does he get bullied by the jocks or does he get bullied by some fake friends?
+'''
 
 L_JOCKS = '''
-Some jocks walk up and try to make () do their homework. They threaten to hurt him if he doesn't. But you have no
-idea what to do!!!
+Some jocks walk up to the two of you in the hallway and try to make () do their homework. They threaten to hurt him
+if he doesn't. But you have no idea what to do!!!
 '''
 
 L_NEW_FRIENDS = '''
@@ -36,18 +39,20 @@ L_FAIL = '''
 You didn't do anything and therefore have failed your best freind when he needed you most...
 '''
 
-def start ():
-    print (L_START)
+print (start)
+done = False
+while not done:
+    user_input = str (input("Do you want to make friends with the boy next door or the boy on the bus? Type either 'next door' or 'bus'."))
+    if user_input == "next door":
+        print (L_BOY_NEXT_DOOR)
+        done = True
+    elif user_input == "bus":
+        print (L_BOY_ON_BUS)
+        done = True
+    else:
+        print ("Please type 'next door' or 'bus'.);
+
+def bullying():
+    print(L_BULLIES)
     done = False
-    while not done:
-        user_input = str (input("Do you want to make friends with the boy next door or the boy on the bus? Type either 'next door' or 'bus'."))
-        if user_input == "next door":
-            print (L_BOY_NEXT_DOOR)
-
-            done = True
-        elif user_input == "bus":
-            print (L_BOY_ON_BUS)
-
-            done = True
-        else:
-            print ("Please type 'next door' or 'bus'.);
+    while
