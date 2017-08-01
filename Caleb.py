@@ -12,23 +12,36 @@ As you look at him yourself, your friends laugh and joke about how unqualified h
 You aren’t amused but laugh anyways to get them off your back. Your friends stop laughing and turn to you. “Yo, Caleb. We should totally give him a hard time.
 Why don’t you mess with him. Come on. It would  be funny!”
 '''
+bPractice= '''
+You decide to give into your friends. “Yea, sure. I’ll mess up the kid. This’ll be hilarious”, you lie to them. As you watch the boy doing the different stations
+in practice you realize that you don’t really want to hurt the kid. He shows a lot of effort, maybe even more than the other boys, but you know you can’t back down
+ now that you already promised your friends you’d mess him up. So, what are you going to do: Use your fists or single him out?
+'''
 
 print(start)
-done = False
 
+done = False
 while not done:
     character = input("Type the character's name! ")
     if character == "Caleb":
         print(bIntro)
         done = True
-done = False
 
+done = False
 while not done:
     user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ")
     if user_input == "Yes":
-        print()
+        print(bPractice)
+        bViolence()
         done= True
     elif user_input = "No"
         print()
     else:
         print("Please type Yes or No" )
+
+Def  bViolence()
+    user_input = input("What will you do? Type Punch or Humiliate: ")
+    if user_input == "Punch"
+else:
+    print("Please type Punch or Humiliate.")
+    
