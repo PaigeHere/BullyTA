@@ -1,5 +1,5 @@
 sIntro = '''
-You are Susan. One day as you wait for your daughter to get out of school, you
+You are Susan. One day as you wait for your daughter to get out of school you
 noticed your daughter, Rachel, and a couple of other girls in the football field.
 You look a little closer and you can see that Rachel and those girls were
 bullying another girl. Rachel was kicking the girl and appears to be holding a gray
