@@ -57,8 +57,47 @@ You think back to tryouts. They pressured you into tormenting Nathan, and you ga
 You feel sorry for them. “Can they not just be good to others?” You ask yourself. You decide to forgive their actions. You will be strong, but stand down and not retaliate yourself.
 You have already stood up against them when you made up with Nathan. You forgive them because they have it worse than you. Time passes and you become great friends with Nathan.
 Your old “friends” continue to bully you for awhile, but when you don’t pay them any attention, they lose interest and stop. The season ends, but you know you won’t forget what you
-learned from Nathan. If you’re friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something
-is wrong, Stand Up and take action to make it right.
+learned from Nathan. If your friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something
+is wrong, Stand Up and take action to make it right. The End
+'''
+
+bReport = '''
+“This had gotten out of hand”, you say to Nathan, “It’s not right what they’re doing. I’m going to talk to the coach. He might still be in the office. Do you want to come with me?”
+Nathan smiles, “Yea. Totally.” Together you walk to the coaches office. Luckily, Coach is still there packing up his papers. You both enter the office and tell your stories.
+If your friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something is wrong,
+Stand Up and take action to make it right. The End
+'''
+bIgnore = '''
+You look at all the kids trying out. “What do you want?! Can I help you?” You shout to them. They all scatter. “I guess tryouts are over!” You joke to your friends. All of you laugh,
+and then go your separate ways. You shower and go home. The next day at practice, Coach pulls you over. He starts talking to you, “Caleb. I’m really sorry I have to do this, but I’m
+going to have to cut you from the team.” He looks at you apologetically. You are speechless, so he explains himself. “I heard from the boys that you punched Nathan, so I have to cut you.
+I have no choice. It is against our team contract to use violence. It’s school policy. Sorry boy. Maybe try back for the team next year.” He gives you a pat on the back and heads
+over to the practice. You go to the bench to grab your bag. “What was that all about?” The captains ask you. “You were cut, right? Haha. Not good enough for tryouts.” You’re filled
+with fury when you respond. “Actually yes. I was kicked off the team. Thanks for nothing!” You say. In a furry you grab your bag and go home. Looking back, you can’t see how anything
+you did was a good idea. All you did was hurt someone for fun and then lose. Without practice, you grow distant from your “friends”. You realize more and more what bullies they are,
+and you are ashamed that you were one yourself. “Never again…” you think. Next time I will Stand Up against what is wrong. I will Stand Down to those I hurt.  The End
+'''
+bRunning = '''
+As the players finish up the stations that they were doing they come over to the benches where you sit with the other captains. Finally, the one kid comes over, out of breath and shaking.
+He sits by his bag and starts drinking out of his water bottle you go over to him. “Hey boy. What’s your name? Nathan, aye? Okay Nathan. How do you explain being the last one here?”
+He looks around at the boys who still haven’t come over to the bench, “Um... but I'm not, so... I’m sorry I don’t understand.” You feign annoyance, “OH so you don’t understand let
+me help you understand! Give me 3 Laps around the field!” He doesn’t move, “What?” I pretend to get angrier, “I SAID GIVE ME 3 LAPS! RUN!” With that he jolts up and runs his three laps
+around the field.  Your buddies are sneering and nudging each other laughing, “Shit He did it! He really did it!” All the tryouts look at you and whisper, “What was that all about?...
+That was harsh… What did Nathan do?... That’s annoying.” You want to get this over with. You don’t like hearing the whispers. “Alright everyone! Clear out please. Tryouts are over.
+That’s right! Go home. Thanks!” They all reluctantly grab their things and leave whispering. You heave a sigh. Your friends are still smiling. They congratulate you and pass around
+high fives, fist bumps, and light punches. Soon it’s just you and Nathan left. He comes over to you gasping for air. “So” gasp, “What” gasp “ was that all about?” he asks you. He stands
+up straight and folds his arms. He does not look amused. You don’t know what to say. You could just get him off your back by punching him. He’ll never bother you again, or you could apologize.
+'''
+
+bHit = '''
+You stride over to Nathan. “You know what?”, you say, “I’m done with this!” You pull up your arm and punch him. He stumbles back. “What was that for dude?!” He yells at you. You don’t
+want to explain yourself. You pick up your bag and walk home. The next day at practice, Coach pulls you over. He starts talking to you, “Caleb. I’m really sorry I have to do this, but
+I’m going to have to cut you from the team.” He looks at you apologetically. You are speechless, so he explains himself. “I heard that you punched Nathan, so I have to cut you. I have
+no choice. It is against our team contract to use violence. It’s school policy. Sorry boy. Maybe try back for the team next year.” He gives you a pat on the back and heads over to the
+practice. You go to the bench to grab your bag. “What was that all about?” The captains ask you. “You were cut, right? Haha. Not good enough for tryouts.” You’re filled with fury when
+you respond. “Actually yes. I was kicked off the team. Thanks for nothing!” You say. In a furry you grab your bag and go home. Looking back, you can’t see how anything you did was a
+good idea. All you did was hurt someone for fun and then lose. Without practice, you grow distant from your “friends”. You realize more and more what bullies they are, and you are
+ashamed that you were one yourself. “Never again…” you think. Next time I will Stand Up against what is wrong. I will Stand Down to those I hurt.  The End
 '''
 
 print(start)
@@ -71,20 +110,20 @@ while not done:
         done = True
 
 done = False
-    while not done:
-        user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ")
-        if user_input == "Yes":
+while not done:
+    user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ")
+    if user_input == "Yes":
         print(bPractice)
         bViolence()
         done= True
-    elif user_input = "No":
-        print()
-
+    elif user_input == "No":
+        print(poo)
+        sleep.time(5)
         done= True
     else:
         print("Please type Yes or No" )
 
-Def  bViolence()
+Def bViolence()
     done = False
     while not done:
         user_input = input("What will you do? Type Punch or Humiliate: ")
@@ -93,8 +132,8 @@ Def  bViolence()
             bPunch()
             done = True
         elif user_input == "Humiliate":
-            print()
-            b()
+            print(bRunning)
+            bHumiliate()
             done = True
         else:
             print("Please type Punch or Humiliate.")
@@ -108,21 +147,40 @@ Def bPunch()
             bApologize()
             done = True
         elif user_input == "Ignore":
-            print()
-            bIgnore()
+            print(bIgnore)
+            sleep.time(8)
             done = True
         else:
             print("Please type Apologize or Ignore: ")
 
+
 Def bHumiliate()
     done = False
     while not done:
-        user_input=
-        if user_input == "l":
-        elif user_input == "e":
+        user_input= input("What do you do? Type Apologize or Punch: ")
+        if user_input == "Apologize":
+            print()
+            bFrenemy()
+            done = True
+        elif user_input == "Punch":
+            print(bHit)
+            sleep.time(8)
+            done = True
         else:
             print("Please type )
 
+Def bFrenemy()
+    done = False
+    while not done:
+        user_input = input("Type Punch or Ignore: ")
+        if user_input == "Punch":
+            print(bHit)
+            sleep.time(8)
+        elif user_input == "Ignore":
+            print()
+            sleep.time(8)
+        else:
+            print("Please type Punch or Ignore: ")
 Def bApologize
     print(dAgainst)
     done = False
@@ -138,5 +196,3 @@ Def bApologize
             done = True
         else:
             print("Please type Report or Forgive: ")
-
-Def bIgnore
