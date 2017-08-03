@@ -211,7 +211,7 @@ while not done:
         done= True
     elif user_input == "No":
         print(bFriends)
-        dDouble()
+        bDouble()
         done= True
     else:
         print("Please type Yes or No" )
