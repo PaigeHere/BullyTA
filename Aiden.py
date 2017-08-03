@@ -83,7 +83,7 @@ Mrs.Andrews-"ok, what about you Aiden? Will you tell me?"
 You can either tell Mrs.Andrews what Flash has been doing to you this whole time or you can
 keep quiet, which will you choose?
 '''
-Tell_Mrs_Andrews = '''
+tell_Mrs_Andrews = '''
 You decide to tell Mrs.Andrews what Flash has been doing to you in great detail,
 when it first started, how it makes you feel, how confusing it is because you didn't
 even know him before, but now he's your worse nightmare, you even describe a nightmare you had
@@ -121,7 +121,7 @@ forever to say.
 You can either accept his feelings or turn him down.
 '''
 
-Avoid_telling_Mrs_Andrews = '''
+avoid_telling_Mrs_Andrews = '''
 You don't tell Mrs.Andrews anything:
 You keep quiet and so does Flash.
 Mrs.Andrews-"Oh dear, this is going to be a long two weeks"
@@ -194,7 +194,7 @@ You are forced into a relationship with Flash, who knows why, if only you had to
 what he had been doing to you. Sorry!
 BAD END
 '''
-You_let_the_boy_help_you = '''
+let_the_boy_help = '''
 You-"Thanks for helping me ...?"
 Mystery boy-"No problem, its Phoenix by the way"
 You-"Nice to meet you Phoenix, I'm Aiden"
@@ -246,7 +246,7 @@ help when you had it, now you have two bullies and noone to fight them with. Sor
 BAD END
 '''
 
-Run_away = '''
+run_away = '''
 You run as fast as you can into the school to look for help, anybody in power, heck even a janitor
 would be of use, just then, you see your counselor
 You-"Mrs.Andrews! Come quickly Flash is beating up Phoenix!"
@@ -301,7 +301,7 @@ Looks like the rest of highschool will be a breeze!
 HAPPY END
 '''
 
-Help_Phoenix = '''
+help_Phoenix = '''
  You help Phoenix:
  You run up and grab Flash's arm before he can punch Phoenix
  You-"Flash!! What are you doing?! He hasn't done anything to you!!"
@@ -364,8 +364,28 @@ pain, and knew it would never go away.
 SUPER HAPPY END
 '''
 
+no = '''
+You don't want to be with Phoenix:
+You-"Um, sorry Phoenix, I don't really see you as anymore than a friend"
+Phoenix-"Oh, ok, um that's fine I guess, but I just wanna know something."
+You-"Yeah, what is it?"
+Phoenix-"Do you like someone else?"
+You-"No, I just, don't want to be with anyone yet, that's all, I hope we can still be friends?"
+Phoenix-"Of course we can Aiden, our friendship could never end, no matter what"
+You-"Good"
+Phoenix-"It's getting late, I'll walk you home"
+You-"Thanks man"
+Phoenix walks with you off the field telling you about his day, relieved about what you said
+because what you didn't know was that Flash was hiding behind the bleachers in the field, also
+waiting for your response, but it was only half of what he wanted
+In his perfect world you would've declared your liking of him, because he liked you but
+never knew how to tell you that's why he always bullied you
+Silly right?
+Well, that's Flash for you.
+FRIENDLY END
+'''
 
-Accept_his_feelings = '''
+accept_his_feelings = '''
 You accept Flash's feelings:
 "So that's why he's always been like this" You think "He likes me, but I can't be with him
 at this point in my life, not after all he's done to me."
@@ -388,7 +408,7 @@ you were the school's "it couple" and all was well.
 HAPPY END
 '''
 
-Deny_his_feelings = '''
+deny_his_feelings = '''
 You deny Flash's feelings:
 You-"What? You? Like me? You, the person who made me contemplate life it's self, like me!
 Of all people! Wow kid you're a riot! As if I would date someone so sinsiter!"
@@ -407,16 +427,97 @@ in his class, he has a bully that that makes his life awful, his reason is unkno
 you to make the right choices to find out!
 '''
 
+def Flash_end():
+    done = False
+    while not done:
+        user_input = str (input("Type 'accept' or 'deny'"))
+        if user_input == "accept":
+            print(accept_his_feelings)
+            done = True
+        elif user_input == "deny":
+            print(deny_his_feelings)
+            done = True
+        else:
+            print("Type 'accept' or 'deny'")
+
+
+def Counseling_choices():
+    done = False
+    while not done:
+        user_input = str (input("Type 'tell_Mrs_Andrews' or 'avoid_telling_Mrs_Andrews'"))
+        if user_input == "tell_Mrs_Andrews":
+            print(tell_Mrs_Andrews)
+            Flash_end()
+            done = True
+        elif user_input == "avoid_telling_Mrs_Andrews":
+            print(avoid_telling_Mrs_Andrews)
+            Flash_end()
+            done = True
+        else:
+            print("Type 'tell_Mrs_Andrews' or 'avoid_telling_Mrs_Andrews'");
+
+
+
+def Phoenix_end():
+    done = False
+    while not done:
+        user_input = str (input("Type 'yes' or 'no'"))
+        if user_input == "yes":
+            print(yes)
+            done = True
+        elif user_input == "no":
+            print(no)
+            done = True
+        else:
+            print("Type 'yes' or 'no'");
+
+
+def Fight():
+    done = False
+    while not done:
+        user_input = str (input("Type 'help_Phoenix' or 'run_away'"))
+        if user_input == "help_Phoenix":
+            print(help_Phoenix)
+            Phoenix_end()
+            done = True
+        elif user_input == "run_away":
+            print(run_away)
+            done = True
+        else:
+            print("Type 'help_Phoenix' or 'run_away'");
+
+
+def New_boy_choices():
+    done = False
+    while not done:
+         user_input = str (input("Type 'let_the_boy_help' or 'shoo_him_away'"))
+         if user_input == "let_the_boy_help":
+             print(let_the_boy_help)
+             Fight()
+             done = True
+         elif user_input == "shoo_him_away":
+            print(shoo_him_away)
+            done = True
+         else:
+             print("Type 'let_the_boy_help' or 'shoo_him_away'");
+
+
+
 print(Aidens_bio)
 print(dream)
 print(wake_up)
 print(School)
 done = False
 while not done:
-    user_input = input("Type 'retaliate' or 'let_it_go' ")
+    user_input = str (input("Type 'retaliate' or 'let_it_go' "))
     if user_input == "retaliate":
         print(retaliate)
+        print(Counseling)
+        Counseling_choices()
         done = True
     elif user_input == "let_it_go":
         print(let_it_go)
+        New_boy_choices()
         done = True
+    else:
+        print("Please Type 'retaliate' or 'let_it_go'");
