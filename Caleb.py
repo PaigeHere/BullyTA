@@ -122,12 +122,12 @@ def bApologize():
     print(bAgainst)
     done = False
     while not done:
-        user_input = input("Type Report or Forgive: ")
-        if user_input == "Report":
+        user_input = input("Type Report or Forgive: ").lower()
+        if user_input == "report":
             print(bReport)
             time.sleep(10)
             done = True
-        elif user_input == "Forgive":
+        elif user_input == "forgive":
             print(bForgive)
             time.sleep(10)
             done = True
@@ -138,12 +138,12 @@ def bApologize():
 def bHumiliate():
     done = False
     while not done:
-        user_input= input("What do you do? Type Apologize or Punch: ")
-        if user_input == "Apologize":
+        user_input= input("What do you do? Type Apologize or Punch: ").lower()
+        if user_input == "apologize":
             print(bFlip)
             time.sleep(8)
             done = True
-        elif user_input == "Punch":
+        elif user_input == "punch":
             print(bHit)
             time.sleep(8)
             done = True
@@ -153,12 +153,12 @@ def bHumiliate():
 def bPunch():
     done = False
     while not done:
-        user_input = input("What will you do? Type Apologize or Ignore: ")
-        if user_input == "Apologize":
+        user_input = input("What will you do? Type Apologize or Ignore: ").lower()
+        if user_input == "apologize":
             print(bAdmit)
             bApologize()
             done = True
-        elif user_input == "Ignore":
+        elif user_input == "ignore":
             print(bIgnore)
             time.sleep(8)
             done = True
@@ -169,12 +169,12 @@ def bPunch():
 def bViolence():
     done = False
     while not done:
-        user_input = input("What will you do? Type Punch or Humiliate: ")
-        if user_input == "Punch":
+        user_input = input("What will you do? Type Punch or Humiliate: ").lower()
+        if user_input == "punch":
             print(bFists)
             bPunch()
             done = True
-        elif user_input == "Humiliate":
+        elif user_input == "humiliate":
             print(bRunning)
             bHumiliate()
             done = True
@@ -183,12 +183,12 @@ def bViolence():
 def bDouble():
     done = False
     while not done:
-        user_input = input("What will you do? Type Accept or Refuse: ")
-        if user_input == "Accept":
+        user_input = input("What will you do? Type Accept or Refuse: ").lower()
+        if user_input == "accept":
             print(bPractice)
             bViolence()
             doen = True
-        elif user_input == "Refuse":
+        elif user_input == "refuse":
             bApologize()
             time.sleep(8)
             done = True
@@ -198,18 +198,18 @@ print(start)
 
 done = False
 while not done:
-    character = input("Type the character's name! ")
-    if character == "Caleb":
+    character = input("Type the character's name! ").lower()
+    if character == "caleb":
         print(bIntro)
         done = True
 done = False
 while not done:
-    user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ")
-    if user_input == "Yes":
+    user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
+    if user_input == "yes":
         print(bPractice)
         bViolence()
         done= True
-    elif user_input == "No":
+    elif user_input == "no":
         print(bFriends)
         bDouble()
         done= True
