@@ -60,7 +60,7 @@ cSeeAgain = """
     this problem. Do you ask your mom for some help and confide in her, or confront Alec for telling his friends lies?
 """
 
-cHumiliated = """
+cCatfish = """
     Oh my god! You said yes to Alec, and he asks to meet at a frozen yogurt place nearby tomorrow night! The next day soon arrives, and you're SO excited!
     Once you get there, he's nowhere to be found. You send him a facebook message asking where he is, and he responds with 'Almost there, traffic-sorry!'.
     You wait about five more minutes before seeing Ali and her friends walk in. Ugh! You think you probably look like a loser waiting here alone, if only
@@ -121,7 +121,7 @@ cApology = """
 def cMakeup():
     done = False
     while not done:
-        user_input = str (input("Type 'ignore' if you want to take the high road and be mature, or 'comment' if you want to comment something rude on her picture: "))
+        user_input = str (input("Type 'ignore' if you want to take the high road and be mature, or 'comment' if you want to comment something rude on her picture: ")).lower()
         if user_input == "ignore":
             print(cFacebook)
             cRequest()
@@ -136,7 +136,7 @@ def cMakeup():
 def cBody():
     done = False
     while not done:
-        user_input = str (input("Type 'ignore' if you want to take the high road and be mature, or 'fight' if you want to respond something rude and start a fight: "))
+        user_input = str (input("Type 'ignore' if you want to take the high road and be mature, or 'fight' if you want to respond something rude and start a fight: ")).lower()
         if user_input == "ignore":
             print(cFacebook)
             cRequest()
@@ -151,7 +151,7 @@ def cBody():
 def cRequest():
     done = False
     while not done:
-        user_input = str (input("Type 'accept' if you want to become facebook friends with him, or 'deny' if not: "))
+        user_input = str (input("Type 'accept' if you want to become facebook friends with him, or 'deny' if not: ")).lower()
         if user_input == "accept":
             print(cDate)
             cAskOut()
@@ -166,7 +166,7 @@ def cRequest():
 def cDirtyLooks():
     done = False
     while not done:
-        user_input = str (input("Type 'dean' if you want to tell the dean, or 'friends' if you want to turn your friends against Ali and her squad: "))
+        user_input = str (input("Type 'dean' if you want to tell the dean, or 'friends' if you want to turn your friends against Ali and her squad: ")).lower()
         if user_input == "dean":
             print(cDean)
             cEndGame()
@@ -197,7 +197,7 @@ def cChoice():
 def cAskOut():
     done = False
     while not done:
-        user_input = str (input("Type 'yes' if you want to go out with him, or 'no' if not: "))
+        user_input = str (input("Type 'yes' if you want to go out with him, or 'no' if not: ")).lower()
         if user_input == "yes":
             print(cCatfish)
             cHumiliated()
@@ -212,7 +212,7 @@ def cAskOut():
 def cHumiliated():
     done = False
     while not done:
-        user_input = str (input("Type 'mom' if you want to ask your mom to help, or 'ignore' if you think you can just move on: "))
+        user_input = str (input("Type 'mom' if you want to ask your mom to help, or 'ignore' if you think you can just move on: ")).lower()
         if user_input == "mom":
             print(cMom)
             cEndGame()
@@ -227,7 +227,7 @@ def cHumiliated():
 def cPosted():
     done = False
     while not done:
-        user_input = str (input("Type 'mom' if you want to ask your mom to help, or 'dean' if you think you can get help from the superintendent: "))
+        user_input = str (input("Type 'mom' if you want to ask your mom to help, or 'dean' if you think you can get help from the superintendent: ")).lower()
         if user_input == "mom":
             print(cMom)
             cEndGame()
@@ -242,7 +242,7 @@ def cPosted():
 def cEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Carly's cyberbullying text adventure. To chose another story, type 'play again'  "))
+        user_input = str (input("You have completed Carly's cyberbullying text adventure. To chose another story, type 'play again'  ")).lower()
         if user_input == "play again":
             cIntro()
             done = True
@@ -253,7 +253,7 @@ def cIntro():
     print(cSocialMedia)
     done = False
     while not done:
-        user_input = str (input("Type 'makeup' if it's the glowing selfie, or 'body' if it's the picture of your great body: "))
+        user_input = str (input("Type 'makeup' if it's the glowing selfie, or 'body' if it's the picture of your great body: ")).lower()
         if user_input == "makeup":
             print(cFake)
             cMakeup()
