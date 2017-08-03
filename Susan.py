@@ -93,22 +93,22 @@ later, Rachel is good friends with the girl and had stopped talking to her other
 print(sIntro)
 done = False
 while not done:
-    user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ")
+    user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
     if user_input == "help":
         print(sGet_Out)
         done2 = False
         while not done2:
-                user_input = input("Type 'lie' to lie to the principal or 'truth' to reveal what you saw: ")
+                user_input = input("Type 'lie' to lie to the principal or 'truth' to reveal what you saw: ").lower()
                 if user_input == "lie":
                     print(sDefend_Rachel)
                     done3 = False
                     while not done3:
-                        user_input = input("Type 'lie' to continue lying or 'truth' to reveal what you saw: ")
+                        user_input = input("Type 'lie' to continue lying or 'truth' to reveal what you saw: ").lower()
                         if user_input == "lie":
                             print(sIgnore_Next_Day)
                             done4 = False
                             while not done4:
-                                user_input = input("Type 'help' to help the girl or 'ignore' to girl everything: ")
+                                user_input = input("Type 'help' to help the girl or 'ignore' to girl everything: ").lower()
                                 if user_input == "ignore":
                                     print(sIgnore_Final)
                                     done4 = True
@@ -122,7 +122,7 @@ while not done:
                             print(sBully_Convo)
                             done5 = False
                             while not done5:
-                                user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ")
+                                user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
                                 if user_input == "apologize":
                                     print(sApologize)
                                     done5 = True
@@ -130,7 +130,7 @@ while not done:
                                     print(sIgnore_Next_Day)
                                     done6 = False
                                     while not done6:
-                                        user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ")
+                                        user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                                         if user_input == "help":
                                             print(sHelp_Final)
                                             done6 = True
@@ -150,7 +150,7 @@ while not done:
                     print(sBully_Convo)
                     done7 = False
                     while not done7:
-                        user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ")
+                        user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
                         if user_input == "apologize":
                             print(sApologize)
                             done7 = True
@@ -158,7 +158,7 @@ while not done:
                             print(sIgnore_Next_Day)
                             done8 = False
                             while not done8:
-                                user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ")
+                                user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                                 if user_input == "help":
                                     print(sHelp_Final)
                                     done8 = True
@@ -177,12 +177,12 @@ while not done:
         print(sIgnore_dinner)
         done9 = False
         while not done9:
-                user_input = input("Type 'talk' to talk to Rachel about bullying or 'ignore' to continue on with the day: ")
+                user_input = input("Type 'talk' to talk to Rachel about bullying or 'ignore' to continue on with the day: ").lower()
                 if user_input == "talk":
                     print(sBully_Convo)
                     done10 = False
                     while not done10:
-                        user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ")
+                        user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
                         if user_input == "apologize":
                             print(sApologize)
                             done10 = True
@@ -190,7 +190,7 @@ while not done:
                             print(sIgnore_Next_Day)
                             done11 = False
                             while not done11:
-                                user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ")
+                                user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                                 if user_input == "help":
                                     print(sHelp_Final)
                                     done11 = True
@@ -207,7 +207,7 @@ while not done:
                     print(sIgnore_Next_Day)
                     done12 = False
                     while not done12:
-                        user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ")
+                        user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                         if user_input == "help":
                             print(sHelp_Final)
                             done12 = True
