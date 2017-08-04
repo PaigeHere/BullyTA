@@ -792,7 +792,7 @@ later, Rachel is good friends with the girl and had stopped talking to her other
 start = '''
 WELCOME to Stand Up or Stand Down- Presented by TPMLJ.As you sit down to play this game, center yourself, take a deep breath,
 and wash away all preconceived ideas you have about bullying.  Take a chance and explore the different characters’ lives
- in these different stories. Please choose your character: Caleb, logan, aiden, carly
+ in these different stories. Please choose your character: Caleb, Logan, Aiden, Carly
 '''
 bIntro = '''
 You are on your way to tryouts. It’s a new season, and you and your closest friends are the team captains.
@@ -938,6 +938,8 @@ def aEndGame():
         if user_input == "play again":
             start()
             done = True
+        elif user_input == "exit":
+            exit()
         else:
             print("Please type 'play again'");
 
@@ -1034,6 +1036,8 @@ def bEndGame():
         if user_input == "play again":
             start()
             done = True
+        elif user_input == "exit":
+            exit()
         else:
             print("Please type 'play again'");
 
@@ -1142,6 +1146,8 @@ def sEndGame():
         if user_input == "play again":
             start()
             done = True
+        elif user_input == "exit":
+            exit()
         else:
             print("Please type 'play again'");
 
@@ -1422,6 +1428,8 @@ def cEndGame():
         if user_input == "play again":
             start()
             done = True
+        elif user_input == "exit":
+            exit()
         else:
             print("Please type 'play again'");
 
@@ -1564,27 +1572,31 @@ def lEndGame():
         if user_input == "play again":
             start()
             done = True
+        elif user_input == "exit":
+            exit()
         else:
-            print("Please type 'play again'");
+            print("Please type 'play again' or 'exit'");
+def start():
+    done = False
+    while not done:
+        character = input("Type the character's name! ").lower()
+        if character == "caleb":
+            print(bIntro)
+            caleb()
+            done = True
+        if character == "carly":
+            carly()
+            done = True
+        if character == "logan":
+            logan()
+            done = True
+        if character == "susan":
+            susan()
+            done = True
+        if character == "aiden":
+            aiden()
+            done = True
 
 
 print(start)
-done = False
-while not done:
-    character = input("Type the character's name! ").lower()
-    if character == "caleb":
-        print(bIntro)
-        caleb()
-        done = True
-    if character == "carly":
-        carly()
-        done = True
-    if character == "logan":
-        logan()
-        done = True
-    if character == "susan":
-        susan()
-        done = True
-    if character == "aiden":
-        aiden()
-        done = True
+start()
