@@ -405,7 +405,7 @@ talk to him anymore, so that he could be a good person now, he made ammends with
 he bullied and soon enough they forgave him too After a while of hanging out with him
 you realized you actually had feelings for him, and when graduation came around,
 you were the school's "it couple" and all was well.
-HAPPY END
+SUPER HAPPY END
 '''
 
 deny_his_feelings = '''
@@ -430,7 +430,7 @@ you to make the right choices to find out!
 def Flash_end():
     done = False
     while not done:
-        user_input = str (input("Type 'accept' or 'deny'"))
+        user_input = str (input("Type 'accept' or 'deny'")).lower()
         if user_input == "accept":
             print(accept_his_feelings)
             done = True
@@ -438,30 +438,29 @@ def Flash_end():
             print(deny_his_feelings)
             done = True
         else:
-            print("Type 'accept' or 'deny'")
+            print("Type 'accept' or 'deny'");
 
 
 def Counseling_choices():
     done = False
     while not done:
-        user_input = str (input("Type 'tell_Mrs_Andrews' or 'avoid_telling_Mrs_Andrews'"))
-        if user_input == "tell_Mrs_Andrews":
+        user_input = str (input("Type 'tell her' or 'avoid telling  her'")).lower()
+        if user_input == "tell her":
             print(tell_Mrs_Andrews)
             Flash_end()
             done = True
-        elif user_input == "avoid_telling_Mrs_Andrews":
+        elif user_input == "avoid telling her":
             print(avoid_telling_Mrs_Andrews)
-            Flash_end()
             done = True
         else:
-            print("Type 'tell_Mrs_Andrews' or 'avoid_telling_Mrs_Andrews'");
+            print("Type 'tell her' or 'avoid telling her'");
 
 
 
 def Phoenix_end():
     done = False
     while not done:
-        user_input = str (input("Type 'yes' or 'no'"))
+        user_input = str (input("Type 'yes' or 'no'")).lower()
         if user_input == "yes":
             print(yes)
             done = True
@@ -475,31 +474,31 @@ def Phoenix_end():
 def Fight():
     done = False
     while not done:
-        user_input = str (input("Type 'help_Phoenix' or 'run_away'"))
-        if user_input == "help_Phoenix":
+        user_input = str (input("Type 'help Phoenix' or 'run away'")).lower()
+        if user_input == "help Phoenix":
             print(help_Phoenix)
             Phoenix_end()
             done = True
-        elif user_input == "run_away":
+        elif user_input == "run away":
             print(run_away)
             done = True
         else:
-            print("Type 'help_Phoenix' or 'run_away'");
+            print("Type 'help Phoenix' or 'run away'");
 
 
 def New_boy_choices():
     done = False
     while not done:
-         user_input = str (input("Type 'let_the_boy_help' or 'shoo_him_away'"))
-         if user_input == "let_the_boy_help":
+         user_input = str (input("Type 'let him help' or 'shoo him away'")).lower()
+         if user_input == "let him help":
              print(let_the_boy_help)
              Fight()
              done = True
-         elif user_input == "shoo_him_away":
+         elif user_input == "shoo him away":
             print(shoo_him_away)
             done = True
          else:
-             print("Type 'let_the_boy_help' or 'shoo_him_away'");
+             print("Type 'let him help' or 'shoo him away'");
 
 
 
@@ -509,15 +508,15 @@ print(wake_up)
 print(School)
 done = False
 while not done:
-    user_input = str (input("Type 'retaliate' or 'let_it_go' "))
+    user_input = str (input("Type 'retaliate' or 'let it go' ")).lower()
     if user_input == "retaliate":
         print(retaliate)
         print(Counseling)
         Counseling_choices()
         done = True
-    elif user_input == "let_it_go":
+    elif user_input == "let it go":
         print(let_it_go)
         New_boy_choices()
         done = True
     else:
-        print("Please Type 'retaliate' or 'let_it_go'");
+        print("Please Type 'retaliate' or 'let it go'");
