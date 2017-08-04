@@ -913,13 +913,24 @@ def Flash_end():
         user_input = str (input("Type 'accept' or 'deny'")).lower()
         if user_input == "accept":
             print(accept_his_feelings)
+            print(aEndGame)
             done = True
         elif user_input == "deny":
             print(deny_his_feelings)
+            print(aEndGame)
             done = True
         else:
             print("Type 'accept' or 'deny'");
-
+          
+def aEndGame():
+    done = False
+    while not done:
+        user_input = str (input("You have completed Carly's cyberbullying text adventure. To chose another story, type 'play again'  ")).lower()
+        if user_input == "play again":
+            start()
+            done = True
+        else:
+            print("Please type 'play again'");
 
 def Counseling_choices():
     done = False
@@ -928,9 +939,11 @@ def Counseling_choices():
         if user_input == "tell her":
             print(tell_Mrs_Andrews)
             Flash_end()
+            print(aEndGame)
             done = True
         elif user_input == "avoid telling her":
             print(avoid_telling_Mrs_Andrews)
+            print(aEndGame)
             done = True
         else:
             print("Type 'tell her' or 'avoid telling her'");
@@ -943,9 +956,11 @@ def Phoenix_end():
         user_input = str (input("Type 'yes' or 'no'")).lower()
         if user_input == "yes":
             print(yes)
+            print(aEndGame)
             done = True
         elif user_input == "no":
             print(no)
+            print(aEndGame)
             done = True
         else:
             print("Type 'yes' or 'no'");
@@ -961,6 +976,7 @@ def Fight():
             done = True
         elif user_input == "run away":
             print(run_away)
+            print(aEndGame)
             done = True
         else:
             print("Type 'help Phoenix' or 'run away'");
@@ -976,6 +992,7 @@ def New_boy_choices():
              done = True
          elif user_input == "shoo him away":
             print(shoo_him_away)
+            print(aEndGame)
             done = True
          else:
              print("Type 'let him help' or 'shoo him away'");
@@ -1000,7 +1017,17 @@ def aiden():
             done = True
         else:
             print("Please Type 'retaliate' or 'let it go'");
-            
+      
+def bEndGame():
+    done = False
+    while not done:
+        user_input = str (input("You have completed Caleb's cyberbullying text adventure. To chose another story, type 'play again'  ")).lower()
+        if user_input == "play again":
+            start()
+            done = True
+        else:
+            print("Please type 'play again'");      
+      
 def bApologize():
     print(bAgainst)
     done = False
@@ -1009,10 +1036,12 @@ def bApologize():
         if user_input == "report":
             print(bReport)
             time.sleep(10)
+            bEndGame()
             done = True
         elif user_input == "forgive":
             print(bForgive)
             time.sleep(10)
+            bEndGame()
             done = True
         else:
             print("Please type Report or Forgive.")
@@ -1025,10 +1054,12 @@ def bHumiliate():
         if user_input == "apologize":
             print(bFlip)
             time.sleep(8)
+            bEndGame()
             done = True
         elif user_input == "punch":
             print(bHit)
             time.sleep(8)
+            bEndGame()
             done = True
         else:
             print("Please type Apologize or Punch." )
@@ -1044,6 +1075,7 @@ def bPunch():
         elif user_input == "ignore":
             print(bIgnore)
             time.sleep(8)
+            bEndGame()
             done = True
         else:
             print("Please type Apologize or Ignore.")
@@ -1070,10 +1102,11 @@ def bDouble():
         if user_input == "accept":
             print(bPractice)
             bViolence()
-            doen = True
+            done = True
         elif user_input == "refuse":
             bApologize()
             time.sleep(8)
+            bEndGame()
             done = True
         else:
             print("Please type Accept or Refuse.")
@@ -1093,6 +1126,17 @@ def caleb():
      else:
          print("Please type Yes or No" )
 
+def sEndGame():
+    done = False
+    while not done:
+        user_input = str (input("You have completed Susan's bullyinig text adventure. To chose another story, type 'play again'  ")).lower()
+        if user_input == "play again":
+            start()
+            done = True
+        else:
+            print("Please type 'play again'");       
+
+       
 def susan():        
     print(sIntro)
     done = False
@@ -1115,9 +1159,11 @@ def susan():
                                     user_input = input("Type 'help' to help the girl or 'ignore' to girl everything: ").lower()
                                     if user_input == "ignore":
                                         print(sIgnore_Final)
+                                        sEndGame()
                                         done4 = True
                                     elif user_input == "help":
                                         print(sHelp_Final)
+                                        sEndGame()
                                         done4 = True
                                     else:
                                         print("Please type 'help' or 'ignore': ");
@@ -1129,6 +1175,7 @@ def susan():
                                     user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
                                     if user_input == "apologize":
                                         print(sApologize)
+                                        sEndGame()
                                         done5 = True
                                     elif user_input == "stop":
                                         print(sIgnore_Next_Day)
@@ -1137,9 +1184,11 @@ def susan():
                                             user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                                             if user_input == "help":
                                                 print(sHelp_Final)
+                                                sEndGame()
                                                 done6 = True
                                             elif user_input == "ignore":
                                                 print(sIgnore_Final)
+                                                sEndGame()
                                                 done6 = True
                                             else:
                                                 print("Please type 'help' or 'ignore': ")
@@ -1157,6 +1206,7 @@ def susan():
                             user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
                             if user_input == "apologize":
                                 print(sApologize)
+                                sEndGame()
                                 done7 = True
                             elif user_input == "stop":
                                 print(sIgnore_Next_Day)
@@ -1165,9 +1215,11 @@ def susan():
                                     user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                                     if user_input == "help":
                                         print(sHelp_Final)
+                                        sEndGame()
                                         done8 = True
                                     elif user_input == "ignore":
                                         print(sIgnore_Final)
+                                        sEndGame()
                                         done8 = True
                                     else:
                                         print("Please type 'help' or 'ignore': ");
@@ -1189,6 +1241,7 @@ def susan():
                             user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
                             if user_input == "apologize":
                                 print(sApologize)
+                                sEndGame()
                                 done10 = True
                             elif user_input == "stop":
                                 print(sIgnore_Next_Day)
@@ -1197,9 +1250,11 @@ def susan():
                                     user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                                     if user_input == "help":
                                         print(sHelp_Final)
+                                        sEndGame()
                                         done11 = True
                                     elif user_input == "ignore":
                                         print(sIgnore_Final)
+                                        sEndGame()
                                         done11 = True
                                     else:
                                         print("Please type 'help' or 'ignore': ");
@@ -1214,9 +1269,11 @@ def susan():
                             user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
                             if user_input == "help":
                                 print(sHelp_Final)
+                                sEndGame()
                                 done12 = True
                             elif user_input == "ignore":
                                 print(sIgnore_Final)
+                                sEndGame()
                                 done12 = True
                             else:
                                 print("Please type 'help' or 'ignore': ");
@@ -1226,6 +1283,7 @@ def susan():
             done = True
         else:
             print("Please type 'help' or 'ignore': ");
+          
             
  def cMakeup():
     done = False
@@ -1348,15 +1406,15 @@ def cPosted():
         else:
             print("Please type 'mom' or 'dean'");
 
-def cEndGame():
+def sEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Carly's cyberbullying text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Susan's bullyinig text adventure. To chose another story, type 'play again'  ")).lower()
         if user_input == "play again":
-            cIntro()
+            start()
             done = True
         else:
-            print("Please type 'play again'");
+            print("Please type 'play again'");       
 
 def cIntro():
     print(cSocialMedia)
@@ -1385,9 +1443,11 @@ def last_choice_jocks1():
         user_input = str (input("Please choose either to tell an 'adult' or to 'stand up' for him next time."))
         if user_input == "adult":
             print (L_ADULT)
+            lEndGame()
             done = True
         elif user_input == "stand up":
             print (L_STAND_UP)
+            lEndGame()
             done = True
         else:
             print ("Please type 'adult' or 'stand up'");
@@ -1399,9 +1459,11 @@ def last_choice_jocks2():
         user_input = str (input("Please choose either to tell an 'adult' or to 'stand up' for him next time."))
         if user_input == "adult":
             print (L_ADULT)
+            lEndGame()
             done = True
         elif user_input == "stand up":
             print (L_STAND_UP)
+            lEndGame()
             done = True
         else:
             print ("Please type 'adult' or 'stand up'");
@@ -1413,9 +1475,11 @@ def last_choice_friends1():
         user_input = str (input("Please choose either to 'comfort' him or to completely 'ignore' him in favor for the new friends"))
         if user_input == "comfort":
             print (L_BESTMAN)
+            lEndGame()
             done = True
         elif user_input == "ignore":
             print (L_DEATH_1)
+            lEndGame()
             done = True
         else:
             print ("Please type 'comfort' or 'ignore'");
@@ -1427,9 +1491,11 @@ def last_choice_friends2():
         user_input = str (input("Please choose either to 'comfort' him or to completely 'ignore' him in favor for the new friends"))
         if user_input == "comfort":
             print (L_BESTMAN)
+            lEndGame()
             done = True
         elif user_input == "ignore":
             print (L_DEATH_2)
+            lEndGame()
             done = True
         else:
             print ("Please type 'comfort' or 'ignore'");
@@ -1481,6 +1547,16 @@ def logan():
             done = True
         else:
             print ("Please type 'next door' or 'bus'.");
+          
+ def lEndGame():
+    done = False
+    while not done:
+        user_input = str (input("You have completed Susan's bullyinig text adventure. To chose another story, type 'play again'  ")).lower()
+        if user_input == "play again":
+            start()
+            done = True
+        else:
+            print("Please type 'play again'");       
             
             
 print(start)
