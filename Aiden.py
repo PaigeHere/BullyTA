@@ -10,17 +10,17 @@ dream = '''
  away you are form him. Suddenly a huge door opens, and out walks a ginormous monster coming right
  for you, you take one look back at your ex as he solemly walks away, the monster rushes towards you
  malice in its eyes, you try to run away but it gets closer and closer, soon its too late but as
- soon as he has you in his grip, you hear your alarm sounding. it is time to wake up.
+ he has you in his grip, you hear your alarm sounding. it is time to wake up.
  '''
 
 wake_up = '''
  You wake up in a cold sweat, realizing the monster in your dream was your bully Flash Bunswick
  You sigh as you get up and turn off your alarm.
  On your way to the bathroom you see your mom,
-"Are you ok sweetie you're all sweaty?!"
+Mom-"Aiden hun, are you ok sweetie? You're all sweaty!"
 You wipe your forehead and feel a stream of sweatbeads on the back of your hand
-"Yeah Mom, I'm fine, I was working out for a bit before i had to get up"
-"Oh..ok hun"
+You-"Yeah Mom, I'm fine, I was working out for a bit before i had to get up"
+Mom-"Oh..ok hun"
 You hastily make your way to the bathroom so your mom doesn't ask anymore questions, as if you
 would tell her about your bully, she already has your dad to worry about
 him being in the army and all, it would kill you to add onto that.
@@ -30,7 +30,7 @@ You finally manage to satisfy your mom enough to get out of the house without qu
 You get to school and go to your locker to get your books for class, everything seems to be going
 fine until you suddenly her a *slam* on your locker, and sure enough on the other side is your
 bully, giving you an evil grin
-"What's up Ugly?"
+Flash-"What's up Ugly?"
 (side note Aiden is not in the least bit ugly)
 You can either relaliate against him or let his comment about your appearance go, which will
 you choose?
@@ -55,7 +55,7 @@ You say getting up and dusting yourself office
 The Principal whips back open the office door,"Aiden!!, you get in here as well!
 You know swearing isn't allowed in school!" the pricipal stops yelling and thinks for a second.
 "Looks like you boys could use some time to discuss your problems with eachother, both of you
-meet with the school counselor after school starting today for the rest of the week and next week."
+meet with the school counselor after school starting today for the rest of this week and next week."
 Flash complains and so do you, but it quickly stops when the principal offers detentions instead.
 "Great" you both think "A whole two weeks with this idiot".
 '''
@@ -93,14 +93,14 @@ actions make Aiden feel, how does it make you feel?"
 Flash turns his head away, wiping at his face, and suddenly grabs his bookbag running out of the room.
 Mrs.Andrews-"N-Nathanial!! Where are you going?!" She says running after him.
 You sit there watching this all happen, you thought he would get a kick out of all you said, but, this happened
-"Was he crying?!" You exclaim in shock, "Heck I should be the one cryign after all the stuff he's
+"Was he crying?!" You exclaim in shock, "Heck I should be the one crying after all the stuff he's
 pulled!" you sit back on the couch trying to figure out if what you saw was true, "Couldn't have been, or could it be,
 that I Aiden Pierce made Nathanial Flash Bunswick cry by saying all the things he's done to me?"
 As you sit ther confused Mrs.Andrews walks in with a worried look on her face,
 Mrs.Andrews- "I couldn't find him anywhere, I'm goign to alert the principal, you may go home for the day Aiden."
 She says making her way over to her desk to call the principal
 You-"O-ok, well see you tomorrow Mrs.Andrews"
-"Bye Aiden"
+Andrews-"Bye Aiden"
 You walk out of the school to go home, you notice the sun is setting
 As you are walking out of the school you feel like you are being watched.
 You start to walk faster, to shake the feeling when you hear your name being called out
@@ -158,7 +158,7 @@ are friends or anything.
 You get home, go to your room, and lay in your bed
 Soon you hear another buzzing, its a call, you answer without looking at the caller ID
 You-"Look Flash! I don't want to talk to you so stop calling me! Please!!"
-Caller-"Aiden honey, its me your mom, I was wondering if it was you that came in so i decided to call
+Caller-"Aiden honey, its me your mom, I was wondering if it was you that came in so I decided to call
 you"
 You sit up in bed partially embarrased
 You-"Oh, hi mom, yeah it was me, I'm home"
@@ -258,11 +258,11 @@ Mrs.Andrews-"Flash! Get off of him!"
 Mrs.Andrews had studied anatomy before going into counseling and knew all of the bodies pressure
 points, so she grabbed the one on Flash's neck and relaxed him a bit, long enough for you to
 pull Phoenix out from Flash's grip
-You-"Phoenix! Phoenix, oh my gosh your eye is purple!Phoenix are you ok?! What did he hurt?!
+You-"Phoenix! Phoenix, oh my gosh your eye is purple! Phoenix are you ok?! What did he hurt?!
 Are you bleeding?!"
 Phoenix-"I broke the idiot's nose but I think he broke my arm"
 You-"Oh jeez, Mrs.Anderson, Phoenix has a broken arm and Flash has a broken nose!"
-Mrs.Anderson, the ambulance is on the way, I'm calling both of their parents now to let them know
+Mrs.Anderson- "the ambulance is on the way, I'm calling both of their parents now to let them know"
 
 The ambulance arrives and takes Phoenix and Flash, you try to stay with Phoenix but the
 Nurses tell you its only family for now, so you get your bike and ride to the hospital to wait
@@ -275,7 +275,7 @@ Phoenix-"Look!" he says lifting up his cast for you to see
 Phoenix-"It's a clean cast, and I'm gonna let you sign first!" He hands you the sharpie he asked
 the doctor for earlier still smiling
 You walk up to him and sit in the chair next to his bed,
-You-"Phoenix I'm so sorry, I should've helped you out back ther, yet I ran away for help,
+You-"Phoenix I'm so sorry, I should've helped you out back there, yet I ran away for help,
 like a wimp or something! I understand if you don't really want to be friends annymore, I'll
 give you back the cds you let me borrow and everything"
 Phoenix looks at you confused
@@ -328,7 +328,7 @@ You go to the field as soon as you're done with all your classes and see Phoenix
 you by the gate.
 Phoenix-"Hey"
 You-"Hey, what'd you need to tell me?"
-Phoenix-"Well, initially it was one thing butnow it's two, first off its about Flash"
+Phoenix-"Well, initially it was one thing but now it's two, first off its about Flash"
 You-"I thought he was done with us?"
 Phoenix-"He is, but he wanted you to know the reason he bullied you"
 You-"it's because I'm gay right? I already know that-"
@@ -398,7 +398,7 @@ and bad people, and I no longer want to be associated with them, I don't think t
 really care anyway."
 You-"...fine, I'll be your friend."
 Flash-"Really! Sweet!"
-From there you realized underneath all the bad layers he had, he was a good person who turned
+From there you realized underneath all the bad layers he had, he was a good person who was turned
 bad. You had made loads of new friends from clubs you had joined, and with Flash no longer a problem, you had become super confident.
 Flash's friends didn't really like him as much anymore either, so they didn't really
 talk to him anymore, so that he could be a good person now, he made ammends with other people
