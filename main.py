@@ -925,7 +925,7 @@ def Flash_end():
 def aEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Carly's cyberbullying text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Aiden's bullying text adventure. To chose another story, type 'play again'  ")).lower()
         if user_input == "play again":
             start()
             done = True
@@ -1021,7 +1021,7 @@ def aiden():
 def bEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Caleb's cyberbullying text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Caleb's bullying text adventure. To chose another story, type 'play again'  ")).lower()
         if user_input == "play again":
             start()
             done = True
@@ -1129,7 +1129,7 @@ def caleb():
 def sEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Susan's bullyinig text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Susan's bullyig text adventure. To chose another story, type 'play again'  ")).lower()
         if user_input == "play again":
             start()
             done = True
@@ -1285,12 +1285,12 @@ def susan():
             print("Please type 'help' or 'ignore': ");
           
             
- def cMakeup():
+def cMakeup():
     done = False
     while not done:
         user_input = str (input("Type 'ignore' if you want to take the high road and be mature, or 'comment' if you want to comment something rude on her picture: ")).lower()
         if user_input == "ignore":
-            print(cFacebook)
+            print(cFacebok)
             cRequest()
             done = True
         elif user_input == "comment":
@@ -1406,10 +1406,10 @@ def cPosted():
         else:
             print("Please type 'mom' or 'dean'");
 
-def sEndGame():
+def cEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Susan's bullyinig text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Carly's cyberbullying text adventure. To chose another story, type 'play again'  ")).lower()
         if user_input == "play again":
             start()
             done = True
@@ -1548,10 +1548,10 @@ def logan():
         else:
             print ("Please type 'next door' or 'bus'.");
           
- def lEndGame():
+def lEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Susan's bullyinig text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Logan's bullying text adventure. To chose another story, type 'play again'  ")).lower()
         if user_input == "play again":
             start()
             done = True
@@ -1560,7 +1560,6 @@ def logan():
             
             
 print(start)
-
 done = False
 while not done:
     character = input("Type the character's name! ").lower()
@@ -1568,16 +1567,16 @@ while not done:
         print(bIntro)
         caleb()
         done = True
-     if character == "carly":
+    if character == "carly":
         carly()
         done = True
-     if character == "logan":
+    if character == "logan":
         logan()
         done = True
-     if character == "susan":
+    if character == "susan":
         susan()
         done = True
-     if character == "aiden":
+    if character == "aiden":
         aiden()
         done = True
 
