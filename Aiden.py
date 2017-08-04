@@ -422,9 +422,6 @@ FRIENDLY END
 Aidens_bio = '''
 Hi! Thanks for playing as Aiden, I Jayla Potts, hope you enjoy his story, I worked really
 hard on it so have fun playing!
-Background: Aiden is a 16 year old sophmore in highschool who is one of the few out gay guys
-in his class, he has a bully that that makes his life awful, his reason is unknown, its up to
-you to make the right choices to find out!
 '''
 
 def Flash_end():
