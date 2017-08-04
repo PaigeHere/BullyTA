@@ -856,6 +856,15 @@ learned from Nathan. If your friends force you to be mean to others, are they re
 is wrong, Stand Up and take action to make it right. The End
 '''
 
+bForgive2 = '''
+You think about how they treated you. After you decided that you would not give into the pressure, and you did not bully Nathan, they have retaliated by bullying you.
+You feel sorry for them. “Can they not just be good to others?” You ask yourself. You decide to forgive their actions. You will be strong, but stand down and not retaliate yourself.
+You have already stood up against them when you refused to bully Nathan. You forgive them because they have it worse than you. Time passes and you become great friends with Nathan.
+Your old “friends” continue to bully you for awhile, but when you don’t pay them any attention, they lose interest and stop. The season ends, but you know you won’t forget what you
+learned from Nathan. If your friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something
+is wrong, Stand Up and take action to make it right. The End
+'''
+
 bReport = '''
 “This had gotten out of hand”, you say to Nathan, “It’s not right what they’re doing. I’m going to talk to the coach. He might still be in the office. Do you want to come with me?”
 Nathan smiles, “Yea. Totally.” Together you walk to the coaches office. Luckily, Coach is still there packing up his papers. You both enter the office and tell your stories.
@@ -921,7 +930,7 @@ def Flash_end():
             done = True
         else:
             print("Type 'accept' or 'deny'");
-          
+
 def aEndGame():
     done = False
     while not done:
@@ -1017,7 +1026,7 @@ def aiden():
             done = True
         else:
             print("Please Type 'retaliate' or 'let it go'");
-      
+
 def bEndGame():
     done = False
     while not done:
@@ -1026,8 +1035,8 @@ def bEndGame():
             start()
             done = True
         else:
-            print("Please type 'play again'");      
-      
+            print("Please type 'play again'");
+
 def bApologize():
     print(bAgainst)
     done = False
@@ -1039,7 +1048,7 @@ def bApologize():
             bEndGame()
             done = True
         elif user_input == "forgive":
-            print(bForgive)
+            print(bForgive2)
             time.sleep(10)
             bEndGame()
             done = True
@@ -1111,7 +1120,7 @@ def bDouble():
         else:
             print("Please type Accept or Refuse.")
 
-def caleb():        
+def caleb():
  done = False
  while not done:
      user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
@@ -1134,10 +1143,10 @@ def sEndGame():
             start()
             done = True
         else:
-            print("Please type 'play again'");       
+            print("Please type 'play again'");
 
-       
-def susan():        
+
+def susan():
     print(sIntro)
     done = False
     while not done:
@@ -1283,8 +1292,8 @@ def susan():
             done = True
         else:
             print("Please type 'help' or 'ignore': ");
-          
-            
+
+
 def cMakeup():
     done = False
     while not done:
@@ -1414,7 +1423,7 @@ def cEndGame():
             start()
             done = True
         else:
-            print("Please type 'play again'");       
+            print("Please type 'play again'");
 
 def cIntro():
     print(cSocialMedia)
@@ -1435,7 +1444,7 @@ def cIntro():
 def carly():
     print (cStart)
     cIntro()
-    
+
 def last_choice_jocks1():
     print (L_FAIL)
     done = False
@@ -1532,7 +1541,7 @@ def bullying2():
         else:
             print ("Please type 'jocks' or 'friends'.");
 
-def logan():            
+def logan():
     print (L_START)#start
     done = False
     while not done:
@@ -1547,7 +1556,7 @@ def logan():
             done = True
         else:
             print ("Please type 'next door' or 'bus'.");
-          
+
 def lEndGame():
     done = False
     while not done:
@@ -1556,9 +1565,9 @@ def lEndGame():
             start()
             done = True
         else:
-            print("Please type 'play again'");       
-            
-            
+            print("Please type 'play again'");
+
+
 print(start)
 done = False
 while not done:
@@ -1579,4 +1588,3 @@ while not done:
     if character == "aiden":
         aiden()
         done = True
-
