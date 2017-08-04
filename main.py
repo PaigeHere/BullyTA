@@ -1,322 +1,4 @@
-cStart = """
-    Welcome to Carly's adventure! You're 17 years old and live in Boca Raton, Florida!
-"""
-
-cSocialMedia = """
-    You took a few pictures today and you were TOTALLY feeling yourself! You're debating between the selfie, where your highlighter
-    and eyebrows look AMAZING! You're literally glowing in the picture-which is why you love it so much! But, you also love the one your
-    friend took of you. Your back is facing the camera, and your head is turned to look back at the camera. Your bod looks killer, and
-    it's totally worth showing off. After like THREE hours of cancelling out pictures, your still stuck between these two. Which do you pick?
-"""
-
-cFake = """
-    Finally you decided on the makeup picture! You know you chose well when your phone starts blowing up with likes and comments. You even
-    get a few snapchats from some guys...go you! While scrolling through your comments you come across a rude one from a girl at school
-    named Ali. You two aren't really friends, you've only spoken a few times. The comment says, 'Looking fake af. Take her swimming on the first
-    date boys!' It's rude, and hurts your feelings a little bit. You've never really had a mean comment on any of your pictures before so, you aren't
-    quite sure how to react. You could either stalk some of her pictures on instagram and comment back something rude to her, or just ignore the comment
-    and delete it.
-"""
-
-cShaming = """
-    Yes! The body picture is amazing and you're getting tons of likes and comments! A few guys snapchat you, and you feel great about it! You're self
-    confidence is through the roof! While scrolling through the comments, you see one rude one from a girl named Ali who goes to your school. It says, 'Keep
-    your legs closed, slut.' You don't really understand where she's coming from, you're not the type to be with tons and tons of guys, and your not even
-    close friends with her- so it's none of her business! Regardless, it hurts your feelings and drops your self-esteem quite a bit. You could either ignore
-    the comment and delete it, or respond something snarky- possibly starting a fight with her.
-"""
-
-cFacebook = """
-    You find your inner chill and ignore her comment. Eventually you stop thinking and caring about it, so you clearly made the right decision not to fight her
-    or start up unnecessary drama. A few days after posting the picture, you see a facebook request from someone unfamiliar. His profile picture is super cute,
-    and he looks about your age, 17. You have about 20 mutual friends, so you assume that he goes to a school in your district. Do you accept his friend request
-    or deny it?
-"""
-
-cSchool = """
-    Ali never responded to the comments you left, which made you feel powerful, like you won! You regained your confidence a bit, but still feel kind of upset
-    about the rude things she said. Then again, you said equally rude things to her after. The next day at school while you swap a few books from your backpack
-    to your locker, Ali and her group of friends walk by. You instantly want to shrivel up into a ball, and regret saying rude things to her. You should've just
-    ignored it! She stops near you, and you hear her and her friends mumble some hurtful things about you and call you some mean names. They give you dirty looks
-    and then walk away, but you feel like crying. Do you go and tell the dean, or try and get your friends to turn against Ali and her friends so you have some
-    people to back you up?
-"""
-
-cDate = """
-    After accepting his friend request, the boy, Alec, starts messaging you. You two both hit it off instantly! You find yourself sharing personal information
-    with him about your family life and some other drama. He shares things to, and you feel so connected and confident in trusting him! He's super sweet and cute,
-    and you can't believe you've found someone who you can connect to so well! One day while chatting, he says he has a question for you. Unlike his normal, chattery
-    self, you can tell he's feeling awkard and nervous. Even though it's communicating over a screen, you just have this feeling. Then you find out your hunch was because
-    he was going to ask you on a date! OMG! Do you say yes or no? You're conflicted because you've never met him in person, although he says he goes to a neighboring
-    school, but you also have such a deep connection how could you say no? So, what do you do?
-"""
-
-cSeeAgain = """
-    You click deny with little hesistation. It's better to stay safe and ignore weirdo's that might not be real! The next day, you're out for breakfast
-    with your best friend, Mia. While finishing up your breakfast, you see a familiar face walk in. He makes eye contact with you, and you realize it's the guy
-    you denied on Facebook. You feel a little awkward and look away, until one of his friends approaches you. He asks, 'How was my boy Alec? Heard you're pretty
-    crazy!' You give him a confused look and he turns back to his friends laughing. He mumbles 'slut', under his breath while walking away and you are just so confused!
-     Days later, you hear a rumor that you had hung out with Alec when you haven't even spoken to him! Everyone's talking about you, and you have no clue how to fix
-    this problem. Do you ask your mom for some help and confide in her, or confront Alec for telling his friends lies?
-"""
-
-cCatfish = """
-    Oh my god! You said yes to Alec, and he asks to meet at a frozen yogurt place nearby tomorrow night! The next day soon arrives, and you're SO excited!
-    Once you get there, he's nowhere to be found. You send him a facebook message asking where he is, and he responds with 'Almost there, traffic-sorry!'.
-    You wait about five more minutes before seeing Ali and her friends walk in. Ugh! You think you probably look like a loser waiting here alone, if only
-    they knew a cute guy was coming to meet you! Ali walks over to your table with a smirk, and drops her phone in front of you- revealing all the texts you
-    shared with Alec. At first you're confused, and Ali can tell. 'Don't be an idiot. Alec isn't real, Carly.' You feel like crying. How could she do this?
-    'By the way, I never knew your dad left your mom for some girl five years older than you. Now everyone will know everything you said to him- I mean me!' She
-    laughs, and her friend mumbles something about you being an idiot. She knows EVERYTHING! You feel lost, sad and angry, but don't know what to do. Do you
-    tell your mom in hopes she could possibly help, or ignore them and try to move past this?
-"""
-
-cReveal = """
-    You were always told- stranger danger. Even though you trusted Alec, you felt uncomfortable meeting him alone at night. You suggest a more public meeting, and
-    he doesn't respond. He doesn't message you for days, and finally you get one four days later. 'Don't talk to me again.' You're sad, losing a good
-    friend, but clearly he's a little over-sensitive if he was this pissed about postponing a date for a group event. A day later, you're scrolling through
-    facebook and you see he posted something on his timeline. It's screenshots of your messages with Alec! How could he do this? They're so personal,
-    and so many people are commenting 'Haha' and 'That's a messed up life', or versions of those comments. You start to cry, not understanding why
-    he would do this to you. Do you tell the dean hoping that he could do something about this cyber attack and possibly talk to the super intendent? Or
-    do you ask your mom to help you?
-"""
-
-cDean = """
-    You go to the dean's as soon as possible and show him everything! All the screenshots you've collected and the comments that have been thrown
-    at you. He takes a while, like a month, but finally all the people that harrassed you got suspended for one week. It's nothing TOO major, but it
-    will go on their transcript. They deserve it, and you feel relief that nobody is attacking you anymore. You did the right thing by going to the
-    dean, and you know it!
-"""
-
-cMom = """
-    You confide in your mom, tell her EVERYTHING. She hugs you and comforts you a lot, and you know this was a good choice. She calls up the school
-    and complains, but they do absolutely nothing because 'What the students do out of school, online or offline, is out of our control'. Your mom
-    trys to talk to the parents of the people that harrassed you, but the mothers and fathers just defend their children. There's not much more to be
-    done, which sucks! But, you know you made the right choice telling your mother, because although there is no justice for the cyberbullying you
-    received, you feel a lot better with someone on your side.
-"""
-
-cFire = """
-    You ask your friends to help you gang up against Ali and her friends, and to your surpise, they say no. They tell you they don't like the
-    person you've become, filled with anger and constantly seeking revenge with them! Suddenly you find yourself alone with no friends, because
-    you tried to fight back and fight fire with fire. Being rude to a cyberbully makes YOU a bully, and you had to learn that the hard way.
-"""
-
-cSafe = """
-    You've stayed safe on the internet by ignoring comments and bullies, and keeping your chill. Although, in the future it might be better to ask for help from
-    an authority figure, whether it be your mom or a teacher or a dean! For now though, you're doing great and have good friends supporting you.
-"""
-
-cApology = """
-    You instantly confront Alec, determined to make him apologize and give you an explanation. He says he was pressured by his friends to get with
-    girls, and when he hadn't yet, he had to make something up. Turns out, he's not even into girls, but is too scared of what people will think, so he
-    succumbed to peer pressure to harass others. He's learned his lesson, and apologizes to you. You feel bad for his story, and end up covering for him,
-    saying that you did hang out as long as he tells everyone nothing happened but a simple kiss! You feel happy, and you're glad you did a good thing
-    and protected someone.
-"""
-
-sIntro = '''
-You are Susan. One day as you wait for your daughter to get out of school you
-noticed your daughter, Rachel, and a couple of other girls in the football field.
-You look a little closer and you can see that Rachel and those girls were
-bullying another girl. Rachel was kicking the girl and appears to be holding a gray
-backpack. You know that it's not Rachel's bag because everything that Rachel owns
-is either pink or white. Rachel then proceeds to dump out the contents of the gray
-bag onto the field. What do you do next?
-Do you immediately get out of the car and help the girl that's getting bullied by
-your daughter or do you ignore everything and wait for Rachel to get into the car?
-'''
-
-sGet_Out = '''
-You get out the car and rush towards the girl on the floor. The girl had passed out.
-As you pick up the girl, you can hear your Rachel yelling, "Mom what are you doing?"
-You ignore Rachel and get the girl into the school building. As you help the girl,
-you tell Rachel to pick up the stuff on the ground and put it back into the gray bag.
-The principal notices you enter the building with the girl and tells everyone to
-go to his office while the nurse takes the girl to the nurse's office. The principal
-then asks what happens. What do you do next?
-Do you tell the principal that it was your daughter that was the one bullying the
-girl or do you lie about it?
-'''
-sIgnore_dinner = '''
-As Rachel walks towards the car with her friends, you notice her in a happy mood.
-You greet them and drive her friends home. When you get home, you see that your
-husband is in kitchen making dinner. You go into your office and work, but you can't
-help thinking about Rachel bullying the poor girl.
-It is dinner time and everyone is sat together eating. Should you talk to Rachel about
-what you saw today or should you continue on with your day?
-'''
-
-sBully_Convo = '''
-You tell Rachel that you saw her with her friends in the football field. You lecture
-Rachel about the effects of bullying and you tell her it can cause the girl to have
-depression and anxiety. You tell Rachel that bullying can lead to suicide.
-Do you take Rachel to apologize to the girl or do you tell Rachel to not
-do it again?
-'''
-sIgnore_Next_Day = '''
-The next day, you arrive at the school. As you wait for Rachel, you see her bullying
-the girl again. What do you want to do this time?
-Do you immediately get out of the car and help the girl that's getting bullied by
-your daughter or do you ignore everything and wait for Rachel to get into the car?
-'''
-
-sIgnore_Final = '''
-You ignore the situation once again. This time, the principal happens to be showing
-the superintendent the school and the football field. The both of them sees what
-happens and immediately helps the girl up. The superintendent and the principal
-tells the girls to go to the principal's office. Whilst everything is happening,
-you are sitting in the car and watching. A while later, you get a call and learn that
-Rachel and the girls are suspended and the girl had passed out and was seriously injured.
-The suspension had scarred Rachel's records and everyone in the school no longer looks
-up to her as she lost her place as her class president and the head cheerleader.
-'''
-sDefend_Rachel = '''
-You tell the princpal that you saw the girl lying on the floor and that Rachel and her
-friends were trying to help the girl get up. The principal stares at you as if you are
-telling a fib. What do you do?
-Do you tell the principal that it was your daughter that was the one bullying the
-girl or do you contune lying about it?
-'''
-sHelp_Final = '''
-You get out the car and rush towards the girl on the floor. The girl had passed out.
-As you pick up the girl, you can hear your Rachel yelling, "Mom what are you doing?"
-You ignore Rachel and get the girl into the school building. As you help the girl,
-you tell Rachel to pick up the stuff on the ground and put it back into the gray bag.
-You take the girl to the nurse's office. When the girl wakes up, you make Rachel apologize.
-The girl then learns that you were the one that helped her to the nurse's offices. Rachel
-aplogizes to the girl and the girl accepts her apology. You then ask the girl about her
-grades and the girl tells you that she is not doing very well at school. You tell Rachel
-to tutor the girl. Years later, Rachel is good friends with the girl and had stopped
-talking to her other friends.
-'''
-sApologize = '''
-You take Rachel to apologize to the girl. The girl had learned that you were the one
-that helped her to the nurse's offices. Rachel aplogizes to the girl and the girl
-accepts her apology. You then ask the girl about her grades and the girl tells you
-that she is not doing very well at school. You tell Rachel to tutor the girl. Years
-later, Rachel is good friends with the girl and had stopped talking to her other friends.
-'''
-
 import time
-
-start = '''
-WELCOME to Stand Up or Stand Down- Presented by TPMLJ.As you sit down to play this game, center yourself, take a deep breath,
-and wash away all preconceived ideas you have about bullying.  Take a chance and explore the different characters’ lives
- in these different stories. Please choose your character: Caleb, logan, aiden, carly
-'''
-bIntro = '''
-You are on your way to tryouts. It’s a new season, and you and your closest friends are the team captains.
-As team captains you run the tryout practices to select the best new member for the team. Your friends point out a scrawnier boy among the boys.
-As you look at him yourself, your friends laugh and joke about how unqualified he must be. “Can he even hold the ball with those noodle arms?”, they say.
-You aren’t amused but laugh anyways to get them off your back. Your friends stop laughing and turn to you. “Yo, Caleb. We should totally give him a hard time.
-Why don’t you mess with him. Come on. It would  be funny!”
-'''
-bFriends = '''
-You don’t feel good about that idea. Your friends look at you expectantly, but you don’t want to give in to their pressure. “Nah, I don’t think I want to.
-That doesn’t really seem right.”  They look at you still smiling, “Come on, Caleb. You can’t be serious! It’s just a little fun! It’s no big deal. What do you say?”
-They really want you to do this. You think of your options: You could just mess around with the kid. You really don’t want to disappoint your friends, but at the same time.
-You’re not sure if it would be the right thing to do. Is it worth it? Your friends wait for a reply, “So buddy. What d’ya say?”, one of them asks.
-'''
-bPractice = '''
-You decide to give into your friends. “Yea, sure. I’ll mess up the kid. This’ll be hilarious”, you lie to them. As you watch the boy doing the different stations
-in practice you realize that you don’t really want to hurt the kid. He shows a lot of effort, maybe even more than the other boys, but you know you can’t back down
- now that you already promised your friends you’d mess him up. So, what are you going to do: Use your fists or single him out?
-'''
-
-bFists = '''
-As the players finish up the stations that they were doing they come over to the benches where you sit with the other captains. Finally, the one kid comes over, out of breath and shaking.
-He sits by his bag and starts drinking out of his water bottle you go over to him. “Hey boy. What’s your name? Nathan, aye? Okay Nathan. How do you explain being the last one here?”
-He looks around at the boys who still haven’t come over to the bench, “Um... but I'm not, so... I’m sorry I don’t understand.” You feign annoyance, “OH so you don’t understand let me help you understand!”
-With that you pull back your arm and punch him hard in the cheek. He cries out. All the boys saw you punch him. Your buddies are sneering and nudging each other laughing,
-“Shit He did it! He really did it!” You stare down at your fist; it’s red and raw from the collision. You didn’t plan this well. All all the trainees stare and whisper about you,
-“Should we tell someone?... I don’t know what to do…. Was that legal?... I don’t know if I want to play anymore…” You instantly regret the punch. What can you do to stop the whispers and put them back at ease?
-Should you apologize to Nathan in front of all the boys?
-'''
-
-bAdmit = '''
-Oh Gosh, Nathan! I’m so sorry!!! I really didn’t mean that. I had a rough night last night my dad screamed his ass off at me and my mom is out and I don’t know
-I’ve had a lot of stress” as I apologize I noticed that a lot of the words I’m saying are the truth. My friends looked at me with disapproval, but I didn’t care.
-I wanted to make it up to this hard working boy. “You know Nathan, I was actually really surprised you didn’t finish faster. You were probably the most hardworking
-out there. So um… in order to apologize and make it up to you I’m admitting you into the team. Congratulations!” Nathan looks at you with stunned eyes. “Um Yeah.
-Thanks. Okay yea. I forgive you. Alright.” A smile forms on his face. “Thanks so much! Awesome. Wait you are?” You hadn’t even noticed that you hadn’t told him your
-name yet. “Oh, I’m Caleb.” You look over at your friends while Nathan thanks you again.
-They stare at you. “So you really want to do this? Do you think this guy will even be good?”
-They are less than impressed with your actions. One of the other captains started talking,
-“After you already punched him you think you can go be his friend? Well, whatever, I’m done with this. I can’t play this game with you. Sorry. Bye guys.” He just got up and left.
-To my surprise all the other captains exchanged glances, got up, and followed him. You stand in the field with all the boys trying out. Nathan still stands next to you. “Forget them.”
-He says. “Let’s go out for food.” Nathan, you and all the boys go to the nearest fast food place and stuff yourselves. You decide to welcome all the tryouts to the team.
-'''
-
-bAgainst = '''
-After School the next day, you go to practice. All your new teammates joke with you in breaks, and on the field they listen to you. Meanwhile, the other captains have been shooting you glares.
-They repeatedly make mean comments about you and laugh while you’re helping the new teammates. You’re annoyed, but you don’t want to make the situation worse than it is, so you don’t say anything
- to them. After practice ends you go into the locker room to shower. You can hear your mom’s voice in your head, “Caleb if you try to get into my car like a sweaty mess then you’re walking home.”
- You drop your bag on the bench, pull out your soap, grab your tower and head for the shower. While you’re showering you hear footsteps and a snicker, but think nothing of it. Finally, you get out
-of the shower and find that your bag is gone. All you have is a towel and some soaps. You can’t go out of the locker room like that. It’s hopeless. You sit down on the bench and heave a sigh,
-putting your hands on your head. Suddenly the door opens and you hear shouts from outside. Nathan comes in with your bag in his hands, “Caleb, I saw the other captains with this bag,
-and I noticed it was yours, so I took it from them to give to you. I’m sorry that happened. Here.” He hands you your bag. You put on your cloths. You are surprised by your friends actions.
-What do you do?
-'''
-bForgive= '''
-You think back to tryouts. They pressured you into tormenting Nathan, and you gave in. Now after you decided to stop your own bullying they have retaliated by bullying you.
-You feel sorry for them. “Can they not just be good to others?” You ask yourself. You decide to forgive their actions. You will be strong, but stand down and not retaliate yourself.
-You have already stood up against them when you made up with Nathan. You forgive them because they have it worse than you. Time passes and you become great friends with Nathan.
-Your old “friends” continue to bully you for awhile, but when you don’t pay them any attention, they lose interest and stop. The season ends, but you know you won’t forget what you
-learned from Nathan. If your friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something
-is wrong, Stand Up and take action to make it right. The End
-'''
-
-bReport = '''
-“This had gotten out of hand”, you say to Nathan, “It’s not right what they’re doing. I’m going to talk to the coach. He might still be in the office. Do you want to come with me?”
-Nathan smiles, “Yea. Totally.” Together you walk to the coaches office. Luckily, Coach is still there packing up his papers. You both enter the office and tell your stories.
-If your friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something is wrong,
-Stand Up and take action to make it right. The End
-'''
-bIgnore = '''
-You look at all the kids trying out. “What do you want?! Can I help you?” You shout to them. They all scatter. “I guess tryouts are over!” You joke to your friends. All of you laugh,
-and then go your separate ways. You shower and go home. The next day at practice, Coach pulls you over. He starts talking to you, “Caleb. I’m really sorry I have to do this, but I’m
-going to have to cut you from the team.” He looks at you apologetically. You are speechless, so he explains himself. “I heard from the boys that you punched Nathan, so I have to cut you.
-I have no choice. It is against our team contract to use violence. It’s school policy. Sorry boy. Maybe try back for the team next year.” He gives you a pat on the back and heads
-over to the practice. You go to the bench to grab your bag. “What was that all about?” The captains ask you. “You were cut, right? Haha. Not good enough for tryouts.” You’re filled
-with fury when you respond. “Actually yes. I was kicked off the team. Thanks for nothing!” You say. In a furry you grab your bag and go home. Looking back, you can’t see how anything
-you did was a good idea. All you did was hurt someone for fun and then lose. Without practice, you grow distant from your “friends”. You realize more and more what bullies they are,
-and you are ashamed that you were one yourself. “Never again…” you think. Next time I will Stand Up against what is wrong. I will Stand Down to those I hurt.  The End
-'''
-bRunning = '''
-As the players finish up the stations that they were doing they come over to the benches where you sit with the other captains. Finally, the one kid comes over, out of breath and shaking.
-He sits by his bag and starts drinking out of his water bottle you go over to him. “Hey boy. What’s your name? Nathan, aye? Okay Nathan. How do you explain being the last one here?”
-He looks around at the boys who still haven’t come over to the bench, “Um... but I'm not, so... I’m sorry I don’t understand.” You feign annoyance, “OH so you don’t understand let
-me help you understand! Give me 3 Laps around the field!” He doesn’t move, “What?” I pretend to get angrier, “I SAID GIVE ME 3 LAPS! RUN!” With that he jolts up and runs his three laps
-around the field.  Your buddies are sneering and nudging each other laughing, “Shit He did it! He really did it!” All the tryouts look at you and whisper, “What was that all about?...
-That was harsh… What did Nathan do?... That’s annoying.” You want to get this over with. You don’t like hearing the whispers. “Alright everyone! Clear out please. Tryouts are over.
-That’s right! Go home. Thanks!” They all reluctantly grab their things and leave whispering. You heave a sigh. Your friends are still smiling. They congratulate you and pass around
-high fives, fist bumps, and light punches. Soon it’s just you and Nathan left. He comes over to you gasping for air. “So” gasp, “What” gasp “ was that all about?” he asks you. He stands
-up straight and folds his arms. He does not look amused. You don’t know what to say. You could just get him off your back by punching him. He’ll never bother you again, or you could apologize.
-'''
-
-bHit = '''
-You stride over to Nathan. “You know what?”, you say, “I’m done with this!” You pull up your arm and punch him. He stumbles back. “What was that for dude?!” He yells at you. You don’t
-want to explain yourself. You pick up your bag and walk home. The next day at practice, Coach pulls you over. He starts talking to you, “Caleb. I’m really sorry I have to do this, but
-I’m going to have to cut you from the team.” He looks at you apologetically. You are speechless, so he explains himself. “I heard that you punched Nathan, so I have to cut you. I have
-no choice. It is against our team contract to use violence. It’s school policy. Sorry boy. Maybe try back for the team next year.” He gives you a pat on the back and heads over to the
-practice. You go to the bench to grab your bag. “What was that all about?” The captains ask you. “You were cut, right? Haha. Not good enough for tryouts.” You’re filled with fury when
-you respond. “Actually yes. I was kicked off the team. Thanks for nothing!” You say. In a furry you grab your bag and go home. Looking back, you can’t see how anything you did was a
-good idea. All you did was hurt someone for fun and then lose. Without practice, you grow distant from your “friends”. You realize more and more what bullies they are, and you are
-ashamed that you were one yourself. “Never again…” you think. Next time I will Stand Up against what is wrong. I will Stand Down to those I hurt.  The End
-'''
-bFlip='''
-“Sorry. I just saw you trying so hard out there, I was disappointed when you weren’t the first back”. He looked confused, “But I came back after others because they didn’t actually
-finish their station and left early from it.”  He has a good point, “Okay, yea, I get. Sorry. You shouldn’t have ran; I should have made some of the other boys run. Can we forget this
-happened? It was my bad. I was a little on edge for the first day of practice.” He squints at you, trying to see the lie, but you truly are sorry and don’t want to hurt him. “Okay”,
-he says, “Just don’t make me run for no reason again. Deal?” You’re relieved by his understanding, “Deal.” You shake hands and go home. The next day at practice, Coach calls you over.
-“Hey Caleb. I heard from the other captains that you weren’t treating Nathan properly. I heard you were even harassing him after practice. I’m sorry but that is not within our team contract.
-I’m going to have to cut you from the team.” You can’t believe what you heard. Everything goes fuzzy and numb. You walk over to the bench to pick up your bag. The captains are sneering
-at you and whispering. As you leave you hear Coach yell after you, “I’m sorry Caleb! Come for some of the games!” As you walk home you think about this whole arch of events. You grow
-angry towards your “friends”. You have learned a lot from this. Nothing good can come out of hurting someone for the enjoyment of others. It will come back to hurt you, and you now
-know this. Time moves on and eventually the other captains are found out by the coach and cut from the team for harassment towards the players. After you Apologized to Nathan, you
-both grow closer as friends. You have learned and lost, but also gained a good friend. Now you know to Stand Up for what is right and Stand Down to those you have done wrong. The End.
-'''
 
 dream = '''
  You are in a dark roon by yourself, no windows, just you and your breath.
@@ -906,7 +588,646 @@ know your mistakes and you know you will now never let anyone you know be bullie
 everyone you love from the same outcome.
 '''
 
-def cMakeup():
+cStart = """
+    Welcome to Carly's adventure! You're 17 years old and live in Boca Raton, Florida!
+"""
+
+cSocialMedia = """
+    You took a few pictures today and you were TOTALLY feeling yourself! You're debating between the selfie, where your highlighter
+    and eyebrows look AMAZING! You're literally glowing in the picture-which is why you love it so much! But, you also love the one your
+    friend took of you. Your back is facing the camera, and your head is turned to look back at the camera. Your bod looks killer, and
+    it's totally worth showing off. After like THREE hours of cancelling out pictures, your still stuck between these two. Which do you pick?
+"""
+
+cFake = """
+    Finally you decided on the makeup picture! You know you chose well when your phone starts blowing up with likes and comments. You even
+    get a few snapchats from some guys...go you! While scrolling through your comments you come across a rude one from a girl at school
+    named Ali. You two aren't really friends, you've only spoken a few times. The comment says, 'Looking fake af. Take her swimming on the first
+    date boys!' It's rude, and hurts your feelings a little bit. You've never really had a mean comment on any of your pictures before so, you aren't
+    quite sure how to react. You could either stalk some of her pictures on instagram and comment back something rude to her, or just ignore the comment
+    and delete it.
+"""
+
+cShaming = """
+    Yes! The body picture is amazing and you're getting tons of likes and comments! A few guys snapchat you, and you feel great about it! You're self
+    confidence is through the roof! While scrolling through the comments, you see one rude one from a girl named Ali who goes to your school. It says, 'Keep
+    your legs closed, slut.' You don't really understand where she's coming from, you're not the type to be with tons and tons of guys, and your not even
+    close friends with her- so it's none of her business! Regardless, it hurts your feelings and drops your self-esteem quite a bit. You could either ignore
+    the comment and delete it, or respond something snarky- possibly starting a fight with her.
+"""
+
+cFacebook = """
+    You find your inner chill and ignore her comment. Eventually you stop thinking and caring about it, so you clearly made the right decision not to fight her
+    or start up unnecessary drama. A few days after posting the picture, you see a facebook request from someone unfamiliar. His profile picture is super cute,
+    and he looks about your age, 17. You have about 20 mutual friends, so you assume that he goes to a school in your district. Do you accept his friend request
+    or deny it?
+"""
+
+cSchool = """
+    Ali never responded to the comments you left, which made you feel powerful, like you won! You regained your confidence a bit, but still feel kind of upset
+    about the rude things she said. Then again, you said equally rude things to her after. The next day at school while you swap a few books from your backpack
+    to your locker, Ali and her group of friends walk by. You instantly want to shrivel up into a ball, and regret saying rude things to her. You should've just
+    ignored it! She stops near you, and you hear her and her friends mumble some hurtful things about you and call you some mean names. They give you dirty looks
+    and then walk away, but you feel like crying. Do you go and tell the dean, or try and get your friends to turn against Ali and her friends so you have some
+    people to back you up?
+"""
+
+cDate = """
+    After accepting his friend request, the boy, Alec, starts messaging you. You two both hit it off instantly! You find yourself sharing personal information
+    with him about your family life and some other drama. He shares things to, and you feel so connected and confident in trusting him! He's super sweet and cute,
+    and you can't believe you've found someone who you can connect to so well! One day while chatting, he says he has a question for you. Unlike his normal, chattery
+    self, you can tell he's feeling awkard and nervous. Even though it's communicating over a screen, you just have this feeling. Then you find out your hunch was because
+    he was going to ask you on a date! OMG! Do you say yes or no? You're conflicted because you've never met him in person, although he says he goes to a neighboring
+    school, but you also have such a deep connection how could you say no? So, what do you do?
+"""
+
+cSeeAgain = """
+    You click deny with little hesistation. It's better to stay safe and ignore weirdo's that might not be real! The next day, you're out for breakfast
+    with your best friend, Mia. While finishing up your breakfast, you see a familiar face walk in. He makes eye contact with you, and you realize it's the guy
+    you denied on Facebook. You feel a little awkward and look away, until one of his friends approaches you. He asks, 'How was my boy Alec? Heard you're pretty
+    crazy!' You give him a confused look and he turns back to his friends laughing. He mumbles 'slut', under his breath while walking away and you are just so confused!
+     Days later, you hear a rumor that you had hung out with Alec when you haven't even spoken to him! Everyone's talking about you, and you have no clue how to fix
+    this problem. Do you ask your mom for some help and confide in her, or confront Alec for telling his friends lies?
+"""
+
+cCatfish = """
+    Oh my god! You said yes to Alec, and he asks to meet at a frozen yogurt place nearby tomorrow night! The next day soon arrives, and you're SO excited!
+    Once you get there, he's nowhere to be found. You send him a facebook message asking where he is, and he responds with 'Almost there, traffic-sorry!'.
+    You wait about five more minutes before seeing Ali and her friends walk in. Ugh! You think you probably look like a loser waiting here alone, if only
+    they knew a cute guy was coming to meet you! Ali walks over to your table with a smirk, and drops her phone in front of you- revealing all the texts you
+    shared with Alec. At first you're confused, and Ali can tell. 'Don't be an idiot. Alec isn't real, Carly.' You feel like crying. How could she do this?
+    'By the way, I never knew your dad left your mom for some girl five years older than you. Now everyone will know everything you said to him- I mean me!' She
+    laughs, and her friend mumbles something about you being an idiot. She knows EVERYTHING! You feel lost, sad and angry, but don't know what to do. Do you
+    tell your mom in hopes she could possibly help, or ignore them and try to move past this?
+"""
+
+cReveal = """
+    You were always told- stranger danger. Even though you trusted Alec, you felt uncomfortable meeting him alone at night. You suggest a more public meeting, and
+    he doesn't respond. He doesn't message you for days, and finally you get one four days later. 'Don't talk to me again.' You're sad, losing a good
+    friend, but clearly he's a little over-sensitive if he was this pissed about postponing a date for a group event. A day later, you're scrolling through
+    facebook and you see he posted something on his timeline. It's screenshots of your messages with Alec! How could he do this? They're so personal,
+    and so many people are commenting 'Haha' and 'That's a messed up life', or versions of those comments. You start to cry, not understanding why
+    he would do this to you. Do you tell the dean hoping that he could do something about this cyber attack and possibly talk to the super intendent? Or
+    do you ask your mom to help you?
+"""
+
+cDean = """
+    You go to the dean's as soon as possible and show him everything! All the screenshots you've collected and the comments that have been thrown
+    at you. He takes a while, like a month, but finally all the people that harrassed you got suspended for one week. It's nothing TOO major, but it
+    will go on their transcript. They deserve it, and you feel relief that nobody is attacking you anymore. You did the right thing by going to the
+    dean, and you know it!
+"""
+
+cMom = """
+    You confide in your mom, tell her EVERYTHING. She hugs you and comforts you a lot, and you know this was a good choice. She calls up the school
+    and complains, but they do absolutely nothing because 'What the students do out of school, online or offline, is out of our control'. Your mom
+    trys to talk to the parents of the people that harrassed you, but the mothers and fathers just defend their children. There's not much more to be
+    done, which sucks! But, you know you made the right choice telling your mother, because although there is no justice for the cyberbullying you
+    received, you feel a lot better with someone on your side.
+"""
+
+cFire = """
+    You ask your friends to help you gang up against Ali and her friends, and to your surpise, they say no. They tell you they don't like the
+    person you've become, filled with anger and constantly seeking revenge with them! Suddenly you find yourself alone with no friends, because
+    you tried to fight back and fight fire with fire. Being rude to a cyberbully makes YOU a bully, and you had to learn that the hard way.
+"""
+
+cSafe = """
+    You've stayed safe on the internet by ignoring comments and bullies, and keeping your chill. Although, in the future it might be better to ask for help from
+    an authority figure, whether it be your mom or a teacher or a dean! For now though, you're doing great and have good friends supporting you.
+"""
+
+cApology = """
+    You instantly confront Alec, determined to make him apologize and give you an explanation. He says he was pressured by his friends to get with
+    girls, and when he hadn't yet, he had to make something up. Turns out, he's not even into girls, but is too scared of what people will think, so he
+    succumbed to peer pressure to harass others. He's learned his lesson, and apologizes to you. You feel bad for his story, and end up covering for him,
+    saying that you did hang out as long as he tells everyone nothing happened but a simple kiss! You feel happy, and you're glad you did a good thing
+    and protected someone.
+"""
+
+
+sIntro = '''
+You are Susan. One day as you wait for your daughter to get out of school you
+noticed your daughter, Rachel, and a couple of other girls in the football field.
+You look a little closer and you can see that Rachel and those girls were
+bullying another girl. Rachel was kicking the girl and appears to be holding a gray
+backpack. You know that it's not Rachel's bag because everything that Rachel owns
+is either pink or white. Rachel then proceeds to dump out the contents of the gray
+bag onto the field. What do you do next?
+Do you immediately get out of the car and help the girl that's getting bullied by
+your daughter or do you ignore everything and wait for Rachel to get into the car?
+'''
+
+sGet_Out = '''
+You get out the car and rush towards the girl on the floor. The girl had passed out.
+As you pick up the girl, you can hear your Rachel yelling, "Mom what are you doing?"
+You ignore Rachel and get the girl into the school building. As you help the girl,
+you tell Rachel to pick up the stuff on the ground and put it back into the gray bag.
+The principal notices you enter the building with the girl and tells everyone to
+go to his office while the nurse takes the girl to the nurse's office. The principal
+then asks what happens. What do you do next?
+Do you tell the principal that it was your daughter that was the one bullying the
+girl or do you lie about it?
+'''
+sIgnore_dinner = '''
+As Rachel walks towards the car with her friends, you notice her in a happy mood.
+You greet them and drive her friends home. When you get home, you see that your
+husband is in kitchen making dinner. You go into your office and work, but you can't
+help thinking about Rachel bullying the poor girl.
+It is dinner time and everyone is sat together eating. Should you talk to Rachel about
+what you saw today or should you continue on with your day?
+'''
+
+sBully_Convo = '''
+You tell Rachel that you saw her with her friends in the football field. You lecture
+Rachel about the effects of bullying and you tell her it can cause the girl to have
+depression and anxiety. You tell Rachel that bullying can lead to suicide.
+Do you take Rachel to apologize to the girl or do you tell Rachel to not
+do it again?
+'''
+sIgnore_Next_Day = '''
+The next day, you arrive at the school. As you wait for Rachel, you see her bullying
+the girl again. What do you want to do this time?
+Do you immediately get out of the car and help the girl that's getting bullied by
+your daughter or do you ignore everything and wait for Rachel to get into the car?
+'''
+
+sIgnore_Final = '''
+You ignore the situation once again. This time, the principal happens to be showing
+the superintendent the school and the football field. The both of them sees what
+happens and immediately helps the girl up. The superintendent and the principal
+tells the girls to go to the principal's office. Whilst everything is happening,
+you are sitting in the car and watching. A while later, you get a call and learn that
+Rachel and the girls are suspended and the girl had passed out and was seriously injured.
+The suspension had scarred Rachel's records and everyone in the school no longer looks
+up to her as she lost her place as her class president and the head cheerleader.
+'''
+sDefend_Rachel = '''
+You tell the princpal that you saw the girl lying on the floor and that Rachel and her
+friends were trying to help the girl get up. The principal stares at you as if you are
+telling a fib. What do you do?
+Do you tell the principal that it was your daughter that was the one bullying the
+girl or do you contune lying about it?
+'''
+sHelp_Final = '''
+You get out the car and rush towards the girl on the floor. The girl had passed out.
+As you pick up the girl, you can hear your Rachel yelling, "Mom what are you doing?"
+You ignore Rachel and get the girl into the school building. As you help the girl,
+you tell Rachel to pick up the stuff on the ground and put it back into the gray bag.
+You take the girl to the nurse's office. When the girl wakes up, you make Rachel apologize.
+The girl then learns that you were the one that helped her to the nurse's offices. Rachel
+aplogizes to the girl and the girl accepts her apology. You then ask the girl about her
+grades and the girl tells you that she is not doing very well at school. You tell Rachel
+to tutor the girl. Years later, Rachel is good friends with the girl and had stopped
+talking to her other friends.
+'''
+sApologize = '''
+You take Rachel to apologize to the girl. The girl had learned that you were the one
+that helped her to the nurse's offices. Rachel aplogizes to the girl and the girl
+accepts her apology. You then ask the girl about her grades and the girl tells you
+that she is not doing very well at school. You tell Rachel to tutor the girl. Years
+later, Rachel is good friends with the girl and had stopped talking to her other friends.
+'''
+
+start = '''
+WELCOME to Stand Up or Stand Down- Presented by TPMLJ.As you sit down to play this game, center yourself, take a deep breath,
+and wash away all preconceived ideas you have about bullying.  Take a chance and explore the different characters’ lives
+ in these different stories. Please choose your character: Caleb, logan, aiden, carly
+'''
+bIntro = '''
+You are on your way to tryouts. It’s a new season, and you and your closest friends are the team captains.
+As team captains you run the tryout practices to select the best new member for the team. Your friends point out a scrawnier boy among the boys.
+As you look at him yourself, your friends laugh and joke about how unqualified he must be. “Can he even hold the ball with those noodle arms?”, they say.
+You aren’t amused but laugh anyways to get them off your back. Your friends stop laughing and turn to you. “Yo, Caleb. We should totally give him a hard time.
+Why don’t you mess with him. Come on. It would  be funny!”
+'''
+bFriends = '''
+You don’t feel good about that idea. Your friends look at you expectantly, but you don’t want to give in to their pressure. “Nah, I don’t think I want to.
+That doesn’t really seem right.”  They look at you still smiling, “Come on, Caleb. You can’t be serious! It’s just a little fun! It’s no big deal. What do you say?”
+They really want you to do this. You think of your options: You could just mess around with the kid. You really don’t want to disappoint your friends, but at the same time.
+You’re not sure if it would be the right thing to do. Is it worth it? Your friends wait for a reply, “So buddy. What d’ya say?”, one of them asks.
+'''
+bPractice = '''
+You decide to give into your friends. “Yea, sure. I’ll mess up the kid. This’ll be hilarious”, you lie to them. As you watch the boy doing the different stations
+in practice you realize that you don’t really want to hurt the kid. He shows a lot of effort, maybe even more than the other boys, but you know you can’t back down
+ now that you already promised your friends you’d mess him up. So, what are you going to do: Use your fists or single him out?
+'''
+
+bFists = '''
+As the players finish up the stations that they were doing they come over to the benches where you sit with the other captains. Finally, the one kid comes over, out of breath and shaking.
+He sits by his bag and starts drinking out of his water bottle you go over to him. “Hey boy. What’s your name? Nathan, aye? Okay Nathan. How do you explain being the last one here?”
+He looks around at the boys who still haven’t come over to the bench, “Um... but I'm not, so... I’m sorry I don’t understand.” You feign annoyance, “OH so you don’t understand let me help you understand!”
+With that you pull back your arm and punch him hard in the cheek. He cries out. All the boys saw you punch him. Your buddies are sneering and nudging each other laughing,
+“Shit He did it! He really did it!” You stare down at your fist; it’s red and raw from the collision. You didn’t plan this well. All all the trainees stare and whisper about you,
+“Should we tell someone?... I don’t know what to do…. Was that legal?... I don’t know if I want to play anymore…” You instantly regret the punch. What can you do to stop the whispers and put them back at ease?
+Should you apologize to Nathan in front of all the boys?
+'''
+
+bAdmit = '''
+Oh Gosh, Nathan! I’m so sorry!!! I really didn’t mean that. I had a rough night last night my dad screamed his ass off at me and my mom is out and I don’t know
+I’ve had a lot of stress” as I apologize I noticed that a lot of the words I’m saying are the truth. My friends looked at me with disapproval, but I didn’t care.
+I wanted to make it up to this hard working boy. “You know Nathan, I was actually really surprised you didn’t finish faster. You were probably the most hardworking
+out there. So um… in order to apologize and make it up to you I’m admitting you into the team. Congratulations!” Nathan looks at you with stunned eyes. “Um Yeah.
+Thanks. Okay yea. I forgive you. Alright.” A smile forms on his face. “Thanks so much! Awesome. Wait you are?” You hadn’t even noticed that you hadn’t told him your
+name yet. “Oh, I’m Caleb.” You look over at your friends while Nathan thanks you again.
+They stare at you. “So you really want to do this? Do you think this guy will even be good?”
+They are less than impressed with your actions. One of the other captains started talking,
+“After you already punched him you think you can go be his friend? Well, whatever, I’m done with this. I can’t play this game with you. Sorry. Bye guys.” He just got up and left.
+To my surprise all the other captains exchanged glances, got up, and followed him. You stand in the field with all the boys trying out. Nathan still stands next to you. “Forget them.”
+He says. “Let’s go out for food.” Nathan, you and all the boys go to the nearest fast food place and stuff yourselves. You decide to welcome all the tryouts to the team.
+'''
+
+bAgainst = '''
+After School the next day, you go to practice. All your new teammates joke with you in breaks, and on the field they listen to you. Meanwhile, the other captains have been shooting you glares.
+They repeatedly make mean comments about you and laugh while you’re helping the new teammates. You’re annoyed, but you don’t want to make the situation worse than it is, so you don’t say anything
+ to them. After practice ends you go into the locker room to shower. You can hear your mom’s voice in your head, “Caleb if you try to get into my car like a sweaty mess then you’re walking home.”
+ You drop your bag on the bench, pull out your soap, grab your tower and head for the shower. While you’re showering you hear footsteps and a snicker, but think nothing of it. Finally, you get out
+of the shower and find that your bag is gone. All you have is a towel and some soaps. You can’t go out of the locker room like that. It’s hopeless. You sit down on the bench and heave a sigh,
+putting your hands on your head. Suddenly the door opens and you hear shouts from outside. Nathan comes in with your bag in his hands, “Caleb, I saw the other captains with this bag,
+and I noticed it was yours, so I took it from them to give to you. I’m sorry that happened. Here.” He hands you your bag. You put on your cloths. You are surprised by your friends actions.
+What do you do?
+'''
+bForgive= '''
+You think back to tryouts. They pressured you into tormenting Nathan, and you gave in. Now after you decided to stop your own bullying they have retaliated by bullying you.
+You feel sorry for them. “Can they not just be good to others?” You ask yourself. You decide to forgive their actions. You will be strong, but stand down and not retaliate yourself.
+You have already stood up against them when you made up with Nathan. You forgive them because they have it worse than you. Time passes and you become great friends with Nathan.
+Your old “friends” continue to bully you for awhile, but when you don’t pay them any attention, they lose interest and stop. The season ends, but you know you won’t forget what you
+learned from Nathan. If your friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something
+is wrong, Stand Up and take action to make it right. The End
+'''
+
+bReport = '''
+“This had gotten out of hand”, you say to Nathan, “It’s not right what they’re doing. I’m going to talk to the coach. He might still be in the office. Do you want to come with me?”
+Nathan smiles, “Yea. Totally.” Together you walk to the coaches office. Luckily, Coach is still there packing up his papers. You both enter the office and tell your stories.
+If your friends force you to be mean to others, are they really your friends? Is it really worth it to hurt someone to please someone else?  If you realize something is wrong,
+Stand Up and take action to make it right. The End
+'''
+bIgnore = '''
+You look at all the kids trying out. “What do you want?! Can I help you?” You shout to them. They all scatter. “I guess tryouts are over!” You joke to your friends. All of you laugh,
+and then go your separate ways. You shower and go home. The next day at practice, Coach pulls you over. He starts talking to you, “Caleb. I’m really sorry I have to do this, but I’m
+going to have to cut you from the team.” He looks at you apologetically. You are speechless, so he explains himself. “I heard from the boys that you punched Nathan, so I have to cut you.
+I have no choice. It is against our team contract to use violence. It’s school policy. Sorry boy. Maybe try back for the team next year.” He gives you a pat on the back and heads
+over to the practice. You go to the bench to grab your bag. “What was that all about?” The captains ask you. “You were cut, right? Haha. Not good enough for tryouts.” You’re filled
+with fury when you respond. “Actually yes. I was kicked off the team. Thanks for nothing!” You say. In a furry you grab your bag and go home. Looking back, you can’t see how anything
+you did was a good idea. All you did was hurt someone for fun and then lose. Without practice, you grow distant from your “friends”. You realize more and more what bullies they are,
+and you are ashamed that you were one yourself. “Never again…” you think. Next time I will Stand Up against what is wrong. I will Stand Down to those I hurt.  The End
+'''
+bRunning = '''
+As the players finish up the stations that they were doing they come over to the benches where you sit with the other captains. Finally, the one kid comes over, out of breath and shaking.
+He sits by his bag and starts drinking out of his water bottle you go over to him. “Hey boy. What’s your name? Nathan, aye? Okay Nathan. How do you explain being the last one here?”
+He looks around at the boys who still haven’t come over to the bench, “Um... but I'm not, so... I’m sorry I don’t understand.” You feign annoyance, “OH so you don’t understand let
+me help you understand! Give me 3 Laps around the field!” He doesn’t move, “What?” I pretend to get angrier, “I SAID GIVE ME 3 LAPS! RUN!” With that he jolts up and runs his three laps
+around the field.  Your buddies are sneering and nudging each other laughing, “Shit He did it! He really did it!” All the tryouts look at you and whisper, “What was that all about?...
+That was harsh… What did Nathan do?... That’s annoying.” You want to get this over with. You don’t like hearing the whispers. “Alright everyone! Clear out please. Tryouts are over.
+That’s right! Go home. Thanks!” They all reluctantly grab their things and leave whispering. You heave a sigh. Your friends are still smiling. They congratulate you and pass around
+high fives, fist bumps, and light punches. Soon it’s just you and Nathan left. He comes over to you gasping for air. “So” gasp, “What” gasp “ was that all about?” he asks you. He stands
+up straight and folds his arms. He does not look amused. You don’t know what to say. You could just get him off your back by punching him. He’ll never bother you again, or you could apologize.
+'''
+
+bHit = '''
+You stride over to Nathan. “You know what?”, you say, “I’m done with this!” You pull up your arm and punch him. He stumbles back. “What was that for dude?!” He yells at you. You don’t
+want to explain yourself. You pick up your bag and walk home. The next day at practice, Coach pulls you over. He starts talking to you, “Caleb. I’m really sorry I have to do this, but
+I’m going to have to cut you from the team.” He looks at you apologetically. You are speechless, so he explains himself. “I heard that you punched Nathan, so I have to cut you. I have
+no choice. It is against our team contract to use violence. It’s school policy. Sorry boy. Maybe try back for the team next year.” He gives you a pat on the back and heads over to the
+practice. You go to the bench to grab your bag. “What was that all about?” The captains ask you. “You were cut, right? Haha. Not good enough for tryouts.” You’re filled with fury when
+you respond. “Actually yes. I was kicked off the team. Thanks for nothing!” You say. In a furry you grab your bag and go home. Looking back, you can’t see how anything you did was a
+good idea. All you did was hurt someone for fun and then lose. Without practice, you grow distant from your “friends”. You realize more and more what bullies they are, and you are
+ashamed that you were one yourself. “Never again…” you think. Next time I will Stand Up against what is wrong. I will Stand Down to those I hurt.  The End
+'''
+bFlip='''
+“Sorry. I just saw you trying so hard out there, I was disappointed when you weren’t the first back”. He looked confused, “But I came back after others because they didn’t actually
+finish their station and left early from it.”  He has a good point, “Okay, yea, I get. Sorry. You shouldn’t have ran; I should have made some of the other boys run. Can we forget this
+happened? It was my bad. I was a little on edge for the first day of practice.” He squints at you, trying to see the lie, but you truly are sorry and don’t want to hurt him. “Okay”,
+he says, “Just don’t make me run for no reason again. Deal?” You’re relieved by his understanding, “Deal.” You shake hands and go home. The next day at practice, Coach calls you over.
+“Hey Caleb. I heard from the other captains that you weren’t treating Nathan properly. I heard you were even harassing him after practice. I’m sorry but that is not within our team contract.
+I’m going to have to cut you from the team.” You can’t believe what you heard. Everything goes fuzzy and numb. You walk over to the bench to pick up your bag. The captains are sneering
+at you and whispering. As you leave you hear Coach yell after you, “I’m sorry Caleb! Come for some of the games!” As you walk home you think about this whole arch of events. You grow
+angry towards your “friends”. You have learned a lot from this. Nothing good can come out of hurting someone for the enjoyment of others. It will come back to hurt you, and you now
+know this. Time moves on and eventually the other captains are found out by the coach and cut from the team for harassment towards the players. After you Apologized to Nathan, you
+both grow closer as friends. You have learned and lost, but also gained a good friend. Now you know to Stand Up for what is right and Stand Down to those you have done wrong. The End.
+'''
+
+def Flash_end():
+    done = False
+    while not done:
+        user_input = str (input("Type 'accept' or 'deny'")).lower()
+        if user_input == "accept":
+            print(accept_his_feelings)
+            done = True
+        elif user_input == "deny":
+            print(deny_his_feelings)
+            done = True
+        else:
+            print("Type 'accept' or 'deny'");
+
+
+def Counseling_choices():
+    done = False
+    while not done:
+        user_input = str (input("Type 'tell her' or 'avoid telling  her'")).lower()
+        if user_input == "tell her":
+            print(tell_Mrs_Andrews)
+            Flash_end()
+            done = True
+        elif user_input == "avoid telling her":
+            print(avoid_telling_Mrs_Andrews)
+            done = True
+        else:
+            print("Type 'tell her' or 'avoid telling her'");
+
+
+
+def Phoenix_end():
+    done = False
+    while not done:
+        user_input = str (input("Type 'yes' or 'no'")).lower()
+        if user_input == "yes":
+            print(yes)
+            done = True
+        elif user_input == "no":
+            print(no)
+            done = True
+        else:
+            print("Type 'yes' or 'no'");
+
+
+def Fight():
+    done = False
+    while not done:
+        user_input = str (input("Type 'help Phoenix' or 'run away'")).lower()
+        if user_input == "help Phoenix":
+            print(help_Phoenix)
+            Phoenix_end()
+            done = True
+        elif user_input == "run away":
+            print(run_away)
+            done = True
+        else:
+            print("Type 'help Phoenix' or 'run away'");
+
+
+def New_boy_choices():
+    done = False
+    while not done:
+         user_input = str (input("Type 'let him help' or 'shoo him away'")).lower()
+         if user_input == "let him help":
+             print(let_the_boy_help)
+             Fight()
+             done = True
+         elif user_input == "shoo him away":
+            print(shoo_him_away)
+            done = True
+         else:
+             print("Type 'let him help' or 'shoo him away'");
+
+
+def aiden():
+    print(Aidens_bio)
+    print(dream)
+    print(wake_up)
+    print(School)
+    done = False
+    while not done:
+        user_input = str (input("Type 'retaliate' or 'let it go' ")).lower()
+        if user_input == "retaliate":
+            print(retaliate)
+            print(Counseling)
+            Counseling_choices()
+            done = True
+        elif user_input == "let it go":
+            print(let_it_go)
+            New_boy_choices()
+            done = True
+        else:
+            print("Please Type 'retaliate' or 'let it go'");
+            
+def bApologize():
+    print(bAgainst)
+    done = False
+    while not done:
+        user_input = input("Type Report or Forgive: ").lower()
+        if user_input == "report":
+            print(bReport)
+            time.sleep(10)
+            done = True
+        elif user_input == "forgive":
+            print(bForgive)
+            time.sleep(10)
+            done = True
+        else:
+            print("Please type Report or Forgive.")
+
+
+def bHumiliate():
+    done = False
+    while not done:
+        user_input= input("What do you do? Type Apologize or Punch: ").lower()
+        if user_input == "apologize":
+            print(bFlip)
+            time.sleep(8)
+            done = True
+        elif user_input == "punch":
+            print(bHit)
+            time.sleep(8)
+            done = True
+        else:
+            print("Please type Apologize or Punch." )
+
+def bPunch():
+    done = False
+    while not done:
+        user_input = input("What will you do? Type Apologize or Ignore: ").lower()
+        if user_input == "apologize":
+            print(bAdmit)
+            bApologize()
+            done = True
+        elif user_input == "ignore":
+            print(bIgnore)
+            time.sleep(8)
+            done = True
+        else:
+            print("Please type Apologize or Ignore.")
+
+
+def bViolence():
+    done = False
+    while not done:
+        user_input = input("What will you do? Type Punch or Humiliate: ").lower()
+        if user_input == "punch":
+            print(bFists)
+            bPunch()
+            done = True
+        elif user_input == "humiliate":
+            print(bRunning)
+            bHumiliate()
+            done = True
+        else:
+            print("Please type Punch or Humiliate.")
+def bDouble():
+    done = False
+    while not done:
+        user_input = input("What will you do? Type Accept or Refuse: ").lower()
+        if user_input == "accept":
+            print(bPractice)
+            bViolence()
+            doen = True
+        elif user_input == "refuse":
+            bApologize()
+            time.sleep(8)
+            done = True
+        else:
+            print("Please type Accept or Refuse.")
+
+def caleb():        
+done = False
+while not done:
+    user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
+    if user_input == "yes":
+        print(bPractice)
+        bViolence()
+        done= True
+    elif user_input == "no":
+        print(bFriends)
+        bDouble()
+        done= True
+    else:
+        print("Please type Yes or No" )
+
+def susan():        
+    print(sIntro)
+    done = False
+    while not done:
+        user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
+        if user_input == "help":
+            print(sGet_Out)
+            done2 = False
+            while not done2:
+                    user_input = input("Type 'lie' to lie to the principal or 'truth' to reveal what you saw: ").lower()
+                    if user_input == "lie":
+                        print(sDefend_Rachel)
+                        done3 = False
+                        while not done3:
+                            user_input = input("Type 'lie' to continue lying or 'truth' to reveal what you saw: ").lower()
+                            if user_input == "lie":
+                                print(sIgnore_Next_Day)
+                                done4 = False
+                                while not done4:
+                                    user_input = input("Type 'help' to help the girl or 'ignore' to girl everything: ").lower()
+                                    if user_input == "ignore":
+                                        print(sIgnore_Final)
+                                        done4 = True
+                                    elif user_input == "help":
+                                        print(sHelp_Final)
+                                        done4 = True
+                                    else:
+                                        print("Please type 'help' or 'ignore': ");
+                                done3 = True
+                            elif user_input == "truth":
+                                print(sBully_Convo)
+                                done5 = False
+                                while not done5:
+                                    user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
+                                    if user_input == "apologize":
+                                        print(sApologize)
+                                        done5 = True
+                                    elif user_input == "stop":
+                                        print(sIgnore_Next_Day)
+                                        done6 = False
+                                        while not done6:
+                                            user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
+                                            if user_input == "help":
+                                                print(sHelp_Final)
+                                                done6 = True
+                                            elif user_input == "ignore":
+                                                print(sIgnore_Final)
+                                                done6 = True
+                                            else:
+                                                print("Please type 'help' or 'ignore': ")
+                                            done5 = True
+                                    else:
+                                        print("Please type 'apologize' or 'stop': ");
+                                done3 = True
+                            else:
+                                print("Plese type 'lie' or 'truth': ");
+                        done2 = True
+                    elif user_input == "truth":
+                        print(sBully_Convo)
+                        done7 = False
+                        while not done7:
+                            user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
+                            if user_input == "apologize":
+                                print(sApologize)
+                                done7 = True
+                            elif user_input == "stop":
+                                print(sIgnore_Next_Day)
+                                done8 = False
+                                while not done8:
+                                    user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
+                                    if user_input == "help":
+                                        print(sHelp_Final)
+                                        done8 = True
+                                    elif user_input == "ignore":
+                                        print(sIgnore_Final)
+                                        done8 = True
+                                    else:
+                                        print("Please type 'help' or 'ignore': ");
+                                done7 = True
+                        done2 = True
+                    else:
+                        print("Please type 'lie' or 'truth': ");
+            done = True
+
+        elif user_input == "ignore":
+            print(sIgnore_dinner)
+            done9 = False
+            while not done9:
+                    user_input = input("Type 'talk' to talk to Rachel about bullying or 'ignore' to continue on with the day: ").lower()
+                    if user_input == "talk":
+                        print(sBully_Convo)
+                        done10 = False
+                        while not done10:
+                            user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
+                            if user_input == "apologize":
+                                print(sApologize)
+                                done10 = True
+                            elif user_input == "stop":
+                                print(sIgnore_Next_Day)
+                                done11 = False
+                                while not done11:
+                                    user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
+                                    if user_input == "help":
+                                        print(sHelp_Final)
+                                        done11 = True
+                                    elif user_input == "ignore":
+                                        print(sIgnore_Final)
+                                        done11 = True
+                                    else:
+                                        print("Please type 'help' or 'ignore': ");
+                                done10 = True
+                            else:
+                                print("Please type 'apologize' or 'stop': ");
+                        done9 = True
+                    elif user_input == "ignore":
+                        print(sIgnore_Next_Day)
+                        done12 = False
+                        while not done12:
+                            user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
+                            if user_input == "help":
+                                print(sHelp_Final)
+                                done12 = True
+                            elif user_input == "ignore":
+                                print(sIgnore_Final)
+                                done12 = True
+                            else:
+                                print("Please type 'help' or 'ignore': ");
+                        done9 = True
+                    else:
+                        print("Please type 'talk' or 'ignore': ");
+            done = True
+        else:
+            print("Please type 'help' or 'ignore': ");
+            
+ def cMakeup():
     done = False
     while not done:
         user_input = str (input("Type 'ignore' if you want to take the high road and be mature, or 'comment' if you want to comment something rude on her picture: ")).lower()
@@ -1053,335 +1374,10 @@ def cIntro():
         else:
             print("Please type 'makeup' or 'selfie'");
 
-
-print (cStart)
-cIntro()
-
-print(sIntro)
-done = False
-while not done:
-    user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
-    if user_input == "help":
-        print(sGet_Out)
-        done2 = False
-        while not done2:
-                user_input = input("Type 'lie' to lie to the principal or 'truth' to reveal what you saw: ").lower()
-                if user_input == "lie":
-                    print(sDefend_Rachel)
-                    done3 = False
-                    while not done3:
-                        user_input = input("Type 'lie' to continue lying or 'truth' to reveal what you saw: ").lower()
-                        if user_input == "lie":
-                            print(sIgnore_Next_Day)
-                            done4 = False
-                            while not done4:
-                                user_input = input("Type 'help' to help the girl or 'ignore' to girl everything: ").lower()
-                                if user_input == "ignore":
-                                    print(sIgnore_Final)
-                                    done4 = True
-                                elif user_input == "help":
-                                    print(sHelp_Final)
-                                    done4 = True
-                                else:
-                                    print("Please type 'help' or 'ignore': ");
-                            done3 = True
-                        elif user_input == "truth":
-                            print(sBully_Convo)
-                            done5 = False
-                            while not done5:
-                                user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
-                                if user_input == "apologize":
-                                    print(sApologize)
-                                    done5 = True
-                                elif user_input == "stop":
-                                    print(sIgnore_Next_Day)
-                                    done6 = False
-                                    while not done6:
-                                        user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
-                                        if user_input == "help":
-                                            print(sHelp_Final)
-                                            done6 = True
-                                        elif user_input == "ignore":
-                                            print(sIgnore_Final)
-                                            done6 = True
-                                        else:
-                                            print("Please type 'help' or 'ignore': ")
-                                        done5 = True
-                                else:
-                                    print("Please type 'apologize' or 'stop': ");
-                            done3 = True
-                        else:
-                            print("Plese type 'lie' or 'truth': ");
-                    done2 = True
-                elif user_input == "truth":
-                    print(sBully_Convo)
-                    done7 = False
-                    while not done7:
-                        user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
-                        if user_input == "apologize":
-                            print(sApologize)
-                            done7 = True
-                        elif user_input == "stop":
-                            print(sIgnore_Next_Day)
-                            done8 = False
-                            while not done8:
-                                user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
-                                if user_input == "help":
-                                    print(sHelp_Final)
-                                    done8 = True
-                                elif user_input == "ignore":
-                                    print(sIgnore_Final)
-                                    done8 = True
-                                else:
-                                    print("Please type 'help' or 'ignore': ");
-                            done7 = True
-                    done2 = True
-                else:
-                    print("Please type 'lie' or 'truth': ");
-        done = True
-
-    elif user_input == "ignore":
-        print(sIgnore_dinner)
-        done9 = False
-        while not done9:
-                user_input = input("Type 'talk' to talk to Rachel about bullying or 'ignore' to continue on with the day: ").lower()
-                if user_input == "talk":
-                    print(sBully_Convo)
-                    done10 = False
-                    while not done10:
-                        user_input = input("Type 'apologize' to apologize to the girl or 'stop' to finish off lecture: ").lower()
-                        if user_input == "apologize":
-                            print(sApologize)
-                            done10 = True
-                        elif user_input == "stop":
-                            print(sIgnore_Next_Day)
-                            done11 = False
-                            while not done11:
-                                user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
-                                if user_input == "help":
-                                    print(sHelp_Final)
-                                    done11 = True
-                                elif user_input == "ignore":
-                                    print(sIgnore_Final)
-                                    done11 = True
-                                else:
-                                    print("Please type 'help' or 'ignore': ");
-                            done10 = True
-                        else:
-                            print("Please type 'apologize' or 'stop': ");
-                    done9 = True
-                elif user_input == "ignore":
-                    print(sIgnore_Next_Day)
-                    done12 = False
-                    while not done12:
-                        user_input = input("Type 'help' to help the girl or 'ignore' to ignore everything: ").lower()
-                        if user_input == "help":
-                            print(sHelp_Final)
-                            done12 = True
-                        elif user_input == "ignore":
-                            print(sIgnore_Final)
-                            done12 = True
-                        else:
-                            print("Please type 'help' or 'ignore': ");
-                    done9 = True
-                else:
-                    print("Please type 'talk' or 'ignore': ");
-        done = True
-    else:
-        print("Please type 'help' or 'ignore': ");
-        
-  def bApologize():
-    print(bAgainst)
-    done = False
-    while not done:
-        user_input = input("Type Report or Forgive: ").lower()
-        if user_input == "report":
-            print(bReport)
-            time.sleep(10)
-            done = True
-        elif user_input == "forgive":
-            print(bForgive)
-            time.sleep(10)
-            done = True
-        else:
-            print("Please type Report or Forgive.")
-
-
-def bHumiliate():
-    done = False
-    while not done:
-        user_input= input("What do you do? Type Apologize or Punch: ").lower()
-        if user_input == "apologize":
-            print(bFlip)
-            time.sleep(8)
-            done = True
-        elif user_input == "punch":
-            print(bHit)
-            time.sleep(8)
-            done = True
-        else:
-            print("Please type Apologize or Punch." )
-
-def bPunch():
-    done = False
-    while not done:
-        user_input = input("What will you do? Type Apologize or Ignore: ").lower()
-        if user_input == "apologize":
-            print(bAdmit)
-            bApologize()
-            done = True
-        elif user_input == "ignore":
-            print(bIgnore)
-            time.sleep(8)
-            done = True
-        else:
-            print("Please type Apologize or Ignore.")
-
-
-def bViolence():
-    done = False
-    while not done:
-        user_input = input("What will you do? Type Punch or Humiliate: ").lower()
-        if user_input == "punch":
-            print(bFists)
-            bPunch()
-            done = True
-        elif user_input == "humiliate":
-            print(bRunning)
-            bHumiliate()
-            done = True
-        else:
-            print("Please type Punch or Humiliate.")
-def bDouble():
-    done = False
-    while not done:
-        user_input = input("What will you do? Type Accept or Refuse: ").lower()
-        if user_input == "accept":
-            print(bPractice)
-            bViolence()
-            doen = True
-        elif user_input == "refuse":
-            bApologize()
-            time.sleep(8)
-            done = True
-        else:
-            print("Please type Accept or Refuse.")
-print(start)
-
-done = False
-while not done:
-    character = input("Type the character's name! ").lower()
-    if character == "caleb":
-        print(bIntro)
-        done = True
-done = False
-while not done:
-    user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
-    if user_input == "yes":
-        print(bPractice)
-        bViolence()
-        done= True
-    elif user_input == "no":
-        print(bFriends)
-        bDouble()
-        done= True
-    else:
-        print("Please type Yes or No" )
-     
- def Flash_end():
-    done = False
-    while not done:
-        user_input = str (input("Type 'accept' or 'deny'")).lower()
-        if user_input == "accept":
-            print(accept_his_feelings)
-            done = True
-        elif user_input == "deny":
-            print(deny_his_feelings)
-            done = True
-        else:
-            print("Type 'accept' or 'deny'");
-
-
-def Counseling_choices():
-    done = False
-    while not done:
-        user_input = str (input("Type 'tell her' or 'avoid telling  her'")).lower()
-        if user_input == "tell her":
-            print(tell_Mrs_Andrews)
-            Flash_end()
-            done = True
-        elif user_input == "avoid telling her":
-            print(avoid_telling_Mrs_Andrews)
-            done = True
-        else:
-            print("Type 'tell her' or 'avoid telling her'");
-
-
-
-def Phoenix_end():
-    done = False
-    while not done:
-        user_input = str (input("Type 'yes' or 'no'")).lower()
-        if user_input == "yes":
-            print(yes)
-            done = True
-        elif user_input == "no":
-            print(no)
-            done = True
-        else:
-            print("Type 'yes' or 'no'");
-
-
-def Fight():
-    done = False
-    while not done:
-        user_input = str (input("Type 'help Phoenix' or 'run away'")).lower()
-        if user_input == "help Phoenix":
-            print(help_Phoenix)
-            Phoenix_end()
-            done = True
-        elif user_input == "run away":
-            print(run_away)
-            done = True
-        else:
-            print("Type 'help Phoenix' or 'run away'");
-
-
-def New_boy_choices():
-    done = False
-    while not done:
-         user_input = str (input("Type 'let him help' or 'shoo him away'")).lower()
-         if user_input == "let him help":
-             print(let_the_boy_help)
-             Fight()
-             done = True
-         elif user_input == "shoo him away":
-            print(shoo_him_away)
-            done = True
-         else:
-             print("Type 'let him help' or 'shoo him away'");
-
-
-
-print(Aidens_bio)
-print(dream)
-print(wake_up)
-print(School)
-done = False
-while not done:
-    user_input = str (input("Type 'retaliate' or 'let it go' ")).lower()
-    if user_input == "retaliate":
-        print(retaliate)
-        print(Counseling)
-        Counseling_choices()
-        done = True
-    elif user_input == "let it go":
-        print(let_it_go)
-        New_boy_choices()
-        done = True
-    else:
-        print("Please Type 'retaliate' or 'let it go'");
-        
+def carly():
+    print (cStart)
+    cIntro()
+    
 def last_choice_jocks1():
     print (L_FAIL)
     done = False
@@ -1470,17 +1466,42 @@ def bullying2():
         else:
             print ("Please type 'jocks' or 'friends'.");
 
-print (L_START)#start
+def logan():            
+    print (L_START)#start
+    done = False
+    while not done:
+        user_input = str (input("Do you want to make friends with the boy next door or the boy on the bus? Type either 'next door' or 'bus'."))
+        if user_input == "next door":
+            print (L_BOY_NEXT_DOOR)
+            bullying1()
+            done = True
+        elif user_input == "bus":
+            print (L_BOY_ON_BUS)
+            bullying2()
+            done = True
+        else:
+            print ("Please type 'next door' or 'bus'.");
+            
+            
+print(start)
+
 done = False
 while not done:
-    user_input = str (input("Do you want to make friends with the boy next door or the boy on the bus? Type either 'next door' or 'bus'."))
-    if user_input == "next door":
-        print (L_BOY_NEXT_DOOR)
-        bullying1()
+    character = input("Type the character's name! ").lower()
+    if character == "caleb":
+        print(bIntro)
+        caleb()
         done = True
-    elif user_input == "bus":
-        print (L_BOY_ON_BUS)
-        bullying2()
+     if character == "carly":
+        carly()
         done = True
-    else:
-        print ("Please type 'next door' or 'bus'.");
+     if character == "logan":
+        logan()
+        done = True
+     if character == "susan":
+        susan()
+        done = True
+     if character == "aiden":
+        aiden()
+        done = True
+
