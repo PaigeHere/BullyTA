@@ -265,17 +265,18 @@ def bullying2():
         else:
             print ("Please type 'jocks' or 'friends'.");
 
-print (L_START)#start
-done = False
-while not done:
-    user_input = str (input("Do you walk next door to meet your neighbor or do you wait to make friends on the bus ride to school? Type either 'next door' or 'bus'.  ")).lower()
-    if user_input == "next door":
-        print (L_BOY_NEXT_DOOR)
-        bullying1()
-        done = True
-    elif user_input == "bus":
-        print (L_BOY_ON_BUS)
-        bullying2()
-        done = True
-    else:
-        print ("Please type 'next door' or 'bus'.");
+def aiden():
+    print (L_START)#start
+    done = False
+    while not done:
+        user_input = str (input("Do you walk next door to meet your neighbor or do you wait to make friends on the bus ride to school? Type either 'next door' or 'bus'.  ")).lower()
+        if user_input == "next door":
+            print (L_BOY_NEXT_DOOR)
+            bullying1()
+            done = True
+        elif user_input == "bus":
+            print (L_BOY_ON_BUS)
+            bullying2()
+            done = True
+        else:
+            print ("Please type 'next door' or 'bus'.");
