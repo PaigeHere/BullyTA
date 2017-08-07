@@ -1136,19 +1136,20 @@ def bDouble():
             print("Please type Accept or Refuse.")
 
 def caleb():
- done = False
- while not done:
-     user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
-     if user_input == "yes":
-         print(bPractice)
-         bViolence()
-         done= True
-     elif user_input == "no":
-         print(bFriends)
-         bDouble()
-         done= True
-     else:
-         print("Please type Yes or No" )
+    print(bIntro)
+    done = False
+    while not done:
+        user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
+        if user_input == "yes":
+            print(bPractice)
+            bViolence()
+            done= True
+        elif user_input == "no":
+            print(bFriends)
+            bDouble()
+            done= True
+        else:
+            print("Please type Yes or No" )
 
 def sEndGame():
     done = False

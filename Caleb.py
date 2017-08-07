@@ -194,24 +194,19 @@ def bDouble():
             done = True
         else:
             print("Please type Accept or Refuse.")
-print(start)
 
-done = False
-while not done:
-    character = input("Type the character's name! ").lower()
-    if character == "caleb":
-        print(bIntro)
-        done = True
-done = False
-while not done:
-    user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
-    if user_input == "yes":
-        print(bPractice)
-        bViolence()
-        done= True
-    elif user_input == "no":
-        print(bFriends)
-        bDouble()
-        done= True
-    else:
-        print("Please type Yes or No" )
+def caleb():
+    print(bIntro)
+    done = False
+    while not done:
+        user_input = input("What do you do? Do you give into the pressure? Type Yes or No: ").lower()
+        if user_input == "yes":
+            print(bPractice)
+            bViolence()
+            done= True
+        elif user_input == "no":
+            print(bFriends)
+            bDouble()
+            done= True
+        else:
+            print("Please type Yes or No" )

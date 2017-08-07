@@ -501,22 +501,22 @@ def New_boy_choices():
              print("Type 'let him help' or 'shoo him away'");
 
 
-
-print(Aidens_bio)
-print(dream)
-print(wake_up)
-print(School)
-done = False
-while not done:
-    user_input = str (input("Type 'retaliate' or 'let it go' ")).lower()
-    if user_input == "retaliate":
-        print(retaliate)
-        print(Counseling)
-        Counseling_choices()
-        done = True
-    elif user_input == "let it go":
-        print(let_it_go)
-        New_boy_choices()
-        done = True
-    else:
-        print("Please Type 'retaliate' or 'let it go'");
+def aiden():
+    print(Aidens_bio)
+    print(dream)
+    print(wake_up)
+    print(School)
+    done = False
+    while not done:
+        user_input = str (input("Type 'retaliate' or 'let it go' ")).lower()
+        if user_input == "retaliate":
+            print(retaliate)
+            print(Counseling)
+            Counseling_choices()
+            done = True
+        elif user_input == "let it go":
+            print(let_it_go)
+            New_boy_choices()
+            done = True
+        else:
+            print("Please Type 'retaliate' or 'let it go'");

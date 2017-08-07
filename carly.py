@@ -265,6 +265,9 @@ def cIntro():
         else:
             print("Please type 'makeup' or 'selfie'");
 
+def carly():
+    print (cStart)
+    cIntro()
 
-print (cStart)
-cIntro()
+#print (cStart)
+#cIntro()
