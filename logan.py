@@ -265,7 +265,7 @@ def bullying2():
         else:
             print ("Please type 'jocks' or 'friends'.");
 
-def aiden():
+def logan():
     print (L_START)#start
     done = False
     while not done:
