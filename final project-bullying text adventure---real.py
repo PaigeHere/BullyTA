@@ -7,10 +7,6 @@ England you had some really great friends but you dad got this amazing job offer
 wait to get out there and make some new friends!
 '''
 
-#L_BOY_NEXT_DOOR_NAME = ''' Logan'''
-
-#L_BOY_ON_BUS_NAME = '''Jacob'''
-
 L_BOY_NEXT_DOOR = '''
 Congrats! You met your first friend since moving to California, Peter. A red haired guy
 with deep green eyes. He is a bit taller than you and wears glasses. You guys quickly
