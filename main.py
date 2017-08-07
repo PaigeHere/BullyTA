@@ -934,14 +934,14 @@ def Flash_end():
 def aEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Aiden's bullying text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Aiden's bullying text adventure. To chose another story, type 'play again' or 'exit' to leave the game: ")).lower()
         if user_input == "play again":
             start()
             done = True
         elif user_input == "exit":
             exit()
         else:
-            print("Please type 'play again'");
+            print("Please type 'play again' or 'exit'");
 
 def Counseling_choices():
     done = False
@@ -1032,14 +1032,14 @@ def aiden():
 def bEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Caleb's bullying text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Caleb's bullying text adventure. To chose another story, type 'play again' or 'exit' to leave the game: ")).lower()
         if user_input == "play again":
             start()
             done = True
         elif user_input == "exit":
             exit()
         else:
-            print("Please type 'play again'");
+            print("Please type 'play again' or 'exit'");
 
 def bApologize():
     print(bAgainst)
@@ -1142,14 +1142,14 @@ def caleb():
 def sEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Susan's bullyig text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Susan's bullyig text adventure. To chose another story, type 'play again' or 'exit' to leave the game:  ")).lower()
         if user_input == "play again":
             start()
             done = True
         elif user_input == "exit":
             exit()
         else:
-            print("Please type 'play again'");
+            print("Please type 'play again' or 'exit'");
 
 
 def susan():
@@ -1431,7 +1431,7 @@ def cEndGame():
         elif user_input == "exit":
             exit()
         else:
-            print("Please type 'play again'");
+            print("Please type 'play again' or 'exit'");
 
 def cIntro():
     print(cSocialMedia)
@@ -1568,7 +1568,7 @@ def logan():
 def lEndGame():
     done = False
     while not done:
-        user_input = str (input("You have completed Logan's bullying text adventure. To chose another story, type 'play again'  ")).lower()
+        user_input = str (input("You have completed Logan's bullying text adventure. To chose another story, type 'play again' or 'exit' to leave the game:  ")).lower()
         if user_input == "play again":
             start()
             done = True
@@ -1577,6 +1577,7 @@ def lEndGame():
         else:
             print("Please type 'play again' or 'exit'");
 def start():
+    print(start)
     done = False
     while not done:
         character = input("Type the character's name! ").lower()
@@ -1598,5 +1599,5 @@ def start():
             done = True
 
 
-print(start)
+
 start()
