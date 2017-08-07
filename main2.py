@@ -25,5 +25,3 @@ def start():
             exit()
         else:
             print("Type character name!")
-
-carly.cIntro()
