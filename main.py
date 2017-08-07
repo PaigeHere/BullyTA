@@ -789,10 +789,21 @@ that she is not doing very well at school. You tell Rachel to tutor the girl. Ye
 later, Rachel is good friends with the girl and had stopped talking to her other friends.
 '''
 
-start = '''
+startGame = '''
 WELCOME to Stand Up or Stand Down- Presented by TPMLJ.As you sit down to play this game, center yourself, take a deep breath,
 and wash away all preconceived ideas you have about bullying.  Take a chance and explore the different characters’ lives
- in these different stories. Please choose your character: Caleb, Logan, Aiden, Carly
+in these different stories. Meet the characters:
+
+
+Caleb is a 17 year old boy. He spends most of his time doing his homework and going to sports practice. All his close friends are captains with him on the sports team. He’s an only child and lives with his mom and dad. He’s a jock, but still has a soft side.
+
+Susan is 38 year old mother. She has an eighteen year old daughter named Rachel. Susan is a working mom and her husband is a stay-at-home dad. Susan has a flexible working schedule, so she is able to pick up Rachel from school when her husband is busy. Susan likes to play tennis on her free time.
+
+Aiden is a quirky 16 year old sophomore in highschool. He enjoys reading comics, and biking. Fun Fact: Aiden is one of few gay guys in highschool.
+
+Carly is a 17 year old year old girl from Spain. She enjoys experimenting with makeup and is very active on Instagram. Carly loves talking to people; she would call herself a social butterfly.
+
+  Please choose your character:  Caleb, Logan, Susan, Aiden, Carly
 '''
 bIntro = '''
 You are on your way to tryouts. It’s a new season, and you and your closest friends are the team captains.
@@ -1577,7 +1588,7 @@ def lEndGame():
         else:
             print("Please type 'play again' or 'exit'");
 def start():
-    print(start)
+    print(startGame)
     done = False
     while not done:
         character = input("Type the character's name! ").lower()
@@ -1585,18 +1596,22 @@ def start():
             print(bIntro)
             caleb()
             done = True
-        if character == "carly":
+        elif character == "carly":
             carly()
             done = True
-        if character == "logan":
+        elif character == "logan":
             logan()
             done = True
-        if character == "susan":
+        elif character == "susan":
             susan()
             done = True
-        if character == "aiden":
+        elif character == "aiden":
             aiden()
             done = True
+        elif character == "exit":
+            exit()
+        else:
+            print("Type character name!")
 
 
 
