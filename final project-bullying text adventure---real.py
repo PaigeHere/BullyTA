@@ -185,7 +185,7 @@ def last_choice_jocks1():
     print (L_FAIL)
     done = False
     while not done:
-        user_input = str (input("Please choose either to tell an 'adult' or to 'stand up' for him next time."))
+        user_input = str (input("Please choose either to tell an 'adult' or to 'stand up' for him next time.  ")).lower()
         if user_input == "adult":
             print (L_ADULT)
             done = True
@@ -199,7 +199,7 @@ def last_choice_jocks2():
     print (L_FAIL)
     done = False
     while not done:
-        user_input = str (input("Please choose either to tell an 'adult' or to 'stand up' for him next time."))
+        user_input = str (input("Please choose either to tell an 'adult' or to 'stand up' for him next time.  ")).lower()
         if user_input == "adult":
             print (L_ADULT)
             done = True
@@ -213,7 +213,7 @@ def last_choice_friends1():
     print (L_FAIL)
     done = False
     while not done:
-        user_input = str (input("Please choose either to 'comfort' him or to completely 'ignore' him in favor for the new friends"))
+        user_input = str (input("Please choose either to 'comfort' him or to completely 'ignore' him in favor for the new friends.  ")).lower()
         if user_input == "comfort":
             print (L_BESTMAN)
             done = True
@@ -227,7 +227,7 @@ def last_choice_friends2():
     print (L_FAIL)
     done = False
     while not done:
-        user_input = str (input("Please choose either to 'comfort' him or to completely 'ignore' him in favor for the new friends"))
+        user_input = str (input("Please choose either to 'comfort' him or to completely 'ignore' him in favor for the new friends.  ")).lower()
         if user_input == "comfort":
             print (L_BESTMAN)
             done = True
@@ -241,7 +241,7 @@ def bullying1():
     print(L_BULLIES)
     done = False
     while not done:
-        user_input = str (input("Type 'jocks' if he gets bullied by the jocks and type 'friends' if he is bullied by the new friends."))
+        user_input = str (input("Type 'jocks' if he gets bullied by the jocks and type 'friends' if he is bullied by the new friends.  ")).lower()
         if user_input == "jocks":
             print (L_JOCKS1)
             last_choice_jocks1()
@@ -257,7 +257,7 @@ def bullying2():
     print(L_BULLIES)
     done = False
     while not done:
-        user_input = str (input("Type 'jocks' if he gets bullied by the jocks and type 'friends' if he is bullied by the new friends."))
+        user_input = str (input("Type 'jocks' if he gets bullied by the jocks and type 'friends' if he is bullied by the new friends.  ")).lower()
         if user_input == "jocks":
             print (L_JOCKS2)
             last_choice_jocks2()
@@ -272,7 +272,7 @@ def bullying2():
 print (L_START)#start
 done = False
 while not done:
-    user_input = str (input("Do you walk next door to meet your neighbor or do you wait to make friends on the bus ride to school? Type either 'next door' or 'bus'."))
+    user_input = str (input("Do you walk next door to meet your neighbor or do you wait to make friends on the bus ride to school? Type either 'next door' or 'bus'.  ")).lower()
     if user_input == "next door":
         print (L_BOY_NEXT_DOOR)
         bullying1()
