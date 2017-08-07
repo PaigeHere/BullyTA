@@ -1,8 +1,8 @@
 import carly
 import Caleb as caleb
-import susan
-import aiden
-import final project-bullying text adventure---real as logan
+import Susan as susan
+import Aiden as aiden
+import logan
 
 startGame = '''
 WELCOME to Stand Up or Stand Down- Presented by TPMLJ.As you sit down to play this game, center yourself, take a deep breath,
@@ -45,3 +45,4 @@ def start():
             exit()
         else:
             print("Type character name!")
+start()
