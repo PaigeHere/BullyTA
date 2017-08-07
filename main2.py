@@ -1,5 +1,8 @@
 import carly
 import Caleb as caleb
+import susan
+import final project-bullying text adventure.py as logan
+
 
 def start():
     print(startGame)
@@ -7,19 +10,19 @@ def start():
     while not done:
         character = input("Type the character's name! ").lower()
         if character == "caleb":
-            caleb()
+            caleb.caleb()
             done = True
         elif character == "carly":
-            carly()
+            carly.carly()
             done = True
         elif character == "logan":
-            logan()
+            logan.logan()
             done = True
         elif character == "susan":
-            susan()
+            susan.susan()
             done = True
         elif character == "aiden":
-            aiden()
+            aiden.aiden()
             done = True
         elif character == "exit":
             exit()
