@@ -1,6 +1,6 @@
 sIntro = '''
-You are Susan. One day as you wait for your daughter to get out of school you
-noticed your daughter, Rachel, and a couple of other girls in the football field.
+You are Susan. One day as you wait for your daughter to get out of school, you
+notice your daughter, Rachel, and a couple of other girls in the football field.
 You look a little closer and you can see that Rachel and those girls were
 bullying another girl. Rachel was kicking the girl and appears to be holding a gray
 backpack. You know that it's not Rachel's bag because everything that Rachel owns
@@ -61,7 +61,7 @@ The suspension had scarred Rachel's records and everyone in the school no longer
 up to her as she lost her place as her class president and the head cheerleader.
 '''
 sDefend_Rachel = '''
-You tell the princpal that you saw the girl lying on the floor and that Rachel and her
+You tell the principal that you saw the girl lying on the floor and that Rachel and her
 friends were trying to help the girl get up. The principal stares at you as if you are
 telling a fib. What do you do?
 
